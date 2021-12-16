@@ -3,6 +3,10 @@ module.exports = {
   purge: ["./**/*.html"],
   content: [],
   theme: {
+    fontFamily: {
+      'sans': ['Montserrat', 'sans-serif'],
+      'mono': ['Space Mono', 'monospace'],
+    },
     extend: {
       colors: {
         'dark-grey': '#444444',

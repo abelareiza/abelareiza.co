@@ -6,29 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel Areiza</title>
     <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header class="flex items-center bg-island px-12 h-32">
-      <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="" />
+  <body class="bg-white">
+    <!-- Header -->
+    <header
+      class="max-w-6xl mx-auto px-12 h-32 flex justify-between items-center"
+    >
+      <a href="/">
+        <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="" />
+      </a>
+      <nav class="flex gap-x-6">
+        <a
+          class="
+            font-semibold
+            text-dark-grey
+            transition-all
+            border-b-4 border-transparent
+            hover:border-primary-orange
+          "
+          href="#"
+          >About me</a
+        >
+        <a
+          class="
+            font-semibold
+            text-dark-grey
+            transition-all
+            border-b-4 border-transparent
+            hover:border-primary-orange
+          "
+          href="#"
+          >Skills</a
+        >
+        <a
+          class="
+            font-semibold
+            text-dark-grey
+            transition-all
+            border-b-4 border-transparent
+            hover:border-primary-orange
+          "
+          href="#"
+          >Projects</a
+        >
+        <a
+          class="
+            font-semibold
+            text-dark-grey
+            transition-all
+            border-b-4 border-transparent
+            hover:border-primary-orange
+          "
+          href="#"
+          >Contact</a
+        >
+      </nav>
     </header>
 
-    <body class="bg-pearl">
-      <div class="p-12">
-        <p class="mb-4">Hi, my name is</p>
-        <h1 class="text-monarch-blue font-semibold text-5xl">Abel Areiza.</h1>
-        <h1 class="mb-4 text-black font-semibold text-5xl">
+    <main class="max-w-6xl mx-auto mb-12 border border-black">
+      <!-- Presentation -->
+      <section class="w-full p-12 bg-pearl">
+        <p class="mb-4 font-mono">Hi, my name is</p>
+        <h1 class="text-monarch-blue font-semibold text-5xl leading-[64px]">
+          Abel Areiza.
+        </h1>
+        <h1 class="mb-4 text-black font-semibold text-5xl leading-[64px]">
           I build web stuff
         </h1>
         <p class="mb-8">
           I’m a front-end software developer specialized in implementing (and
           occasionally designing) clean and responsive interfaces.
         </p>
-        <button class="p-5 bg-black text-white font-bold">
-          Explore Projects
-        </button>
-      </div>
-    </body>
+        <div class="flex">
+          <a href="#" class="p-5 bg-black text-white font-bold">
+            Explore Projects
+          </a>
+        </div>
+      </section>
 
-    <footer class="bg-monarch-blue"></footer>
+      <!-- About me -->
+      <section class="w-full p-12 bg-island border-t border-black">
+        <h1 class="mb-4 text-black font-semibold text-5xl leading-[64px]">
+          About me
+        </h1>
+        <p class="mb-3">Hey, there!</p>
+        <p class="mb-3">My name is Abel Areiza.</p>
+        <p class="mb-3">
+          I’m a front-end software developer and systems engineering student
+          with a passion for UI design and development.
+        </p>
+        <p class="mb-3">
+          My interest in programming began in 2016, when browsing the internet I
+          came across a free Python course. Back then I didn't had any
+          programming background.
+        </p>
+        <p class="mb-3">
+          Although I didn’t make the decision to dedicate myself into this at
+          the time, it sparked my interest in programming and eventually that
+          became my job.
+        </p>
+        <p class="mb-3">
+          Currently, and for the last 9 months I have been working as a
+          full-time developer for a local company in which we develop and
+          implement software solutions (mainly web development projects) for
+          clients from various countries.
+        </p>
+        <p class="">
+          I like to spend my free time developing small
+          <a
+            class="underline decoration-primary-orange font-semibold"
+            href="https://github.com/abelareiza"
+            >personal projects</a
+          >
+          in which I put into practice the new things I learn (usually from
+          online courses or books).
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-monarch-blue">
+      <div
+        class="max-w-6xl mx-auto p-12 flex justify-between items-center"
+      >
+        <div class="flex flex-col gap-y-2">
+          <a
+            class="
+              font-semibold
+              text-white
+              transition-all
+              border-b-4 border-transparent
+              hover:border-primary-orange
+            "
+            href="https://www.codecademy.com/profiles/Enjuavel"
+          >
+            Codecademy
+          </a>
+          <a
+            class="
+              font-semibold
+              text-white
+              transition-all
+              border-b-4 border-transparent
+              hover:border-primary-orange
+            "
+            href="https://github.com/abelareiza"
+          >
+            GitHub
+          </a>
+          <a
+            class="
+              font-semibold
+              text-white
+              transition-all
+              border-b-4 border-transparent
+              hover:border-primary-orange
+            "
+            href="https://www.linkedin.com/in/abelareiza"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="
+              font-semibold
+              text-white
+              transition-all
+              border-b-4 border-transparent
+              hover:border-primary-orange
+            "
+            href="https://platzi.com/p/abelareiza/"
+          >
+            Platzi
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
