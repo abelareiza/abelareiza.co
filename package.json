@@ -1,0 +1,25 @@
+{
+  "name": "abelareiza.co",
+  "version": "1.0.0",
+  "description": "Abel Areiza personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "TAILWIND_MODE=watch postcss ./src/tailwind.css -o ./dist/style.css -w --verbose",
+    "prod": "NODE_ENV=production postcss ./src/tailwind.css -o ./dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelareiza/abelareiza.co.git"
+  },
+  "author": "Abel Areiza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abelareiza/abelareiza.co/issues"
+  },
+  "homepage": "https://github.com/abelareiza/abelareiza.co#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.5"
+  }
+}
