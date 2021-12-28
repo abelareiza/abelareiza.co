@@ -103,3 +103,5 @@ typings/
 .tern-port
 
 CNAME
+
+.DS_Store
