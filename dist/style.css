@@ -426,6 +426,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-24 {
   width: 6rem;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -456,6 +459,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+.gap-y-8 {
+  row-gap: 2rem;
 }
 .border-b-4 {
   border-bottom-width: 4px;
@@ -497,6 +503,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.text-center {
+  text-align: center;
+}
 .font-mono {
   font-family: Space Mono, monospace;
 }
@@ -514,8 +523,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[12px\] {
   font-size: 12px;
 }
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-semibold {
   font-weight: 600;
+}
+.italic {
+  font-style: italic;
 }
 .leading-\[64px\] {
   line-height: 64px;
@@ -541,6 +561,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-primary-orange {
   --tw-text-opacity: 1;
   color: rgb(255 129 103 / var(--tw-text-opacity));
+}
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.underline-offset-2 {
+  text-underline-offset: 2px;
 }
 .transition-all {
   transition-property: all;
@@ -576,6 +603,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:border-primary-orange:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 129 103 / var(--tw-border-opacity));
+}
+
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media (min-width: 1024px) {
