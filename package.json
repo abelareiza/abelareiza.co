@@ -4,7 +4,7 @@
   "description": "Abel Areiza personal website",
   "main": "index.js",
   "scripts": {
-    "build": "TAILWIND_MODE=watch postcss ./src/tailwind.css -o ./dist/style.css -w --verbose",
+    "build": "TAILWIND_MODE=watch postcss ./src/tailwind.css -o ./dist/style.css -w",
     "prod": "NODE_ENV=production postcss ./src/tailwind.css -o ./dist/style.css"
   },
   "repository": {
