@@ -451,6 +451,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-6xl {
   max-width: 72rem;
 }
+.max-w-xs {
+  max-width: 20rem;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -501,6 +504,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+.gap-y-8 {
+  row-gap: 2rem;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -693,6 +699,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:pl-8 {
+    padding-left: 2rem;
   }
 }
 
