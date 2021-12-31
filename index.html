@@ -207,7 +207,7 @@
       <h1 class="mb-8 text-primary-blue font-semibold text-5xl leading-[64px]">
         Experience
       </h1>
-      <div class="p-8 flex bg-pearl rounded-xl items-center">
+      <div class="p-8 flex flex-col gap-x-8 md:flex-row md:gap-0 bg-pearl rounded-xl items-center">
         <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="rounded-full w-24">
         <div class="pl-8">
           <span class="flex">
@@ -218,7 +218,9 @@
           <p class="text-sm">Remote position</p>
           <p class="text-sm">Bogotá, Colombia</p>
           <p class="text-sm">April 2021 - Present</p>
-          <p class="pt-4">In charge of implementing clean and responsive interfaces with readable and semantic code making use of technologies such as HTML, Jinja2, Sass, vanilla CSS, vanilla JavaScript and occasionally in frameworks such as React.</p>
+          <p class="pt-4">In charge of implementing clean and responsive interfaces with readable and semantic code
+            making use of technologies such as HTML, Jinja2, Sass, vanilla CSS, vanilla JavaScript and occasionally in
+            frameworks such as React.</p>
         </div>
       </div>
     </section>
@@ -231,22 +233,23 @@
       <p class="mb-3">I like to develop small personal projects in which I put into practice the new things I learn
         (usually from online courses or books).</p>
       <p class="mb-3">Some examples:</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-4">
-        <figure class="w-3/4 sm:w-1/2 md:w-3/4">
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-4"> -->
+      <div class="w-full mx-auto flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
+        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
           <img src="src/custom/assets/png/ml-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-xs italic">Mercadolibre UI Clone just using Tailwind CSS</figcaption>
         </figure>
-        <figure class="w-3/4 sm:w-1/2 md:w-3/4">
+        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
           <img src="src/custom/assets/png/mini-weather-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-xs italic">Minimalist weather app made with React and consuming the
             OpenWeather API</figcaption>
         </figure>
-        <figure class="w-3/4 sm:w-1/2 md:w-3/4">
+        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
           <img src="src/custom/assets/png/playlist-fy-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-xs italic">Simple app to create playlists from the browser made with React
             and consuming the Spotify API</figcaption>
         </figure>
-        <figure class="w-3/4 sm:w-1/2 md:w-3/4">
+        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
           <img src="src/custom/assets/png/seoul-delights-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-xs italic">Small project created in order to practice and understand CSS
             Grid and Subgrid</figcaption>
