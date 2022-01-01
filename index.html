@@ -16,15 +16,15 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
-<body class="bg-white">
+<body>
   <!-- Header -->
-  <header class="max-w-6xl mx-auto px-8 w-full h-32 bg-black flex justify-between items-center">
+  <header class="max-w-6xl mx-auto px-8 w-full h-32 bg-neutral-900 flex justify-between items-center">
     <a href="/">
       <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="..." />
     </a>
 
     <a href="#">
-      <img src="src/custom/assets/svg/menu-icon.svg" alt="...">
+      <img src="src/custom/assets/svg/button-menu.svg" alt="...">
     </a>
 
     <nav class="hidden lg:flex gap-x-6">
@@ -69,236 +69,248 @@
     </nav>
   </header>
 
-  <main class="max-w-6xl mx-auto">
+  <main class="">
 
     <!-- Presentation -->
-    <section class="w-full py-32 px-8 bg-pearl flex flex-col justify-center">
-      <p class="mb-4 text-dark-grey font-mono">> Hi, my name is<span class="console-underscore"
-          id="console">&#95;</span>
-      </p>
-      <h1 class="mb-4 text-primary-blue font-semibold text-5xl leading-[64px]">
+    <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col justify-center">
+      <div class=" bg-black">
+        <p class="px-4 py-3 text-white font-mono">> Hi, my name is<span class="console-underscore"
+            id="console">&#95;</span>
+        </p>
+      </div>
+      <h1 class="mt-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Abel Areiza.
       </h1>
-      <h1 class="mb-8 text-dark-grey font-semibold text-[36px] leading-[48px]">
+      <h1 class="mt-4 text-neutral-200 font-semibold text-[36px] leading-[48px]">
         And I'm a Front-end software developer
       </h1>
-      <div class="flex">
-        <a href="#" id="explore-btn"
-          class="w-48 transition-all p-4 bg-primary-blue flex items-center justify-between text-white font-semibold">
+      <div class="mt-12 flex">
+        <a href="#" class="w-52 px-4 py-3 bg-sky-700 flex items-center justify-between text-neutral-50 font-bold">
           Explore Projects
-          <i class="fas fa-arrow-right text-primary-orange"></i>
+          <i class="fas fa-arrow-right text-xl"></i>
         </a>
       </div>
     </section>
 
     <!-- About me -->
-    <section class="w-full py-16 px-8 bg-white flex flex-col justify-center">
-      <h1 class="mb-4 text-primary-blue font-semibold text-5xl leading-[64px]">
+    <section class="w-full px-8 py-16 bg-neutral-900 flex flex-col justify-center">
+      <h1 class="mb-4 text-neutral-200 font-semibold text-5xl leading-[64px]">
         About me
       </h1>
-      <p class="mb-3">Hey, there!</p>
-      <p class="mb-3">
-        I'm a front-end software developer and systems engineering student with a passion for web UI design and
-        development.
-      </p>
-      <p class="mb-3">
-        My interest in programming began in 2016, when browsing the internet I came across a free Python course.
-      </p>
-      <p class="mb-3">
-        Currently, and for the last 9 months I have been working as a full-time developer for a local company in which
-        we develop and implement software solutions (mainly web projects) for clients from various countries.
-      </p>
-      <p class="mb-3">
-        Some of my favorite hobbies involve reading, music, video games and cycling.
-      </p>
+      <div class="text-neutral-100">
+        <p class="mb-3">Hey, there!</p>
+        <p class="mb-3">
+          I'm a front-end software developer and systems engineering student with a passion for web UI design and
+          development.
+        </p>
+        <p class="mb-3">
+          My interest in programming began in 2016, when browsing the internet I came across a free Python course.
+        </p>
+        <p class="mb-3">
+          Currently, and for the last 9 months I have been working as a full-time developer for a local company in which
+          we develop and implement software solutions (mainly web projects) for clients from various countries.
+        </p>
+        <p>
+          Some of my favorite hobbies involve reading, music, video games and cycling.
+        </p>
+      </div>
     </section>
 
     <!-- Skills -->
-    <section class="w-full py-16 px-8 bg-pearl flex flex-col justify-center">
-      <h1 class="mb-8 text-primary-blue font-semibold text-5xl leading-[64px]">
+    <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col justify-center">
+      <h1 class="mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Skills
       </h1>
-      <div class="flex flex-col items-center">
-        <h3 class="mb-4 text-dark-grey text-xl font-semibold text-monarch-blue">Proficient</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-html.svg" alt="HTML5">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">HTML 5</p>
+      <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+        <h3 class="mb-4 text-neutral-50 font-semibold">Proficient:</h3>
+        <div class="flex justify-evenly">
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-html.svg" alt="HTML5">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">HTML 5</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-css.svg" alt="CSS3">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">CSS 3</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-css.svg" alt="CSS3">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">CSS 3</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-sass.svg" alt="Sass">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Sass</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-sass.svg" alt="Sass">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Sass</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-tailwindcss.svg"
-              alt="Tailwind CSS">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Tailwind CSS</p>
-          </div>
-        </div>
-      </div>
-      <div class="mt-8 flex flex-col items-center">
-        <h3 class="mb-4 text-dark-grey text-xl font-semibold text-monarch-blue">Intermediate</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-js.svg" alt="JavaScript">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">JavaScript</p>
-          </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-react.svg" alt="React">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">React</p>
-          </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-jquery.svg" alt="jQuery">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">jQuery</p>
-          </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-python.svg" alt="Python">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Python</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-tailwindcss.svg" alt="TailwindCSS">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Tailwind</p>
           </div>
         </div>
       </div>
-      <div class="mt-8 flex flex-col items-center">
-        <h3 class="mb-4 text-dark-grey text-xl font-semibold text-monarch-blue">Learning</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-flutter.svg" alt="Flutter">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Flutter</p>
+      <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+        <h3 class="mb-4 text-neutral-50 font-semibold">Intermediate:</h3>
+        <div class="flex justify-evenly">
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-js.svg" alt="JavaScript">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">JavaScript</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-nextjs.svg" alt="Next JS">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Next JS</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-react.svg" alt="React">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">React</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-ts.svg" alt="TypeScript">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">TypeScript</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-jquery.svg" alt="jQuery">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">jQuery</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-vue.svg" alt="Vue JS">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Vue JS</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-python.svg" alt="Python">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Python</p>
           </div>
         </div>
       </div>
-      <div class="mt-8 flex flex-col items-center">
-        <h3 class="mb-4 text-dark-grey text-xl font-semibold text-monarch-blue">Design and prototyping</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-xd.svg" alt="Adobe Xd">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Adobe Xd</p>
+      <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+        <h3 class="mb-4 text-neutral-50 font-semibold">Learning:</h3>
+        <div class="flex justify-evenly">
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-flutter.svg" alt="Flutter">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Flutter</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-illustrator.svg"
-              alt="Illustrator">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Illustrator</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-nextjs.svg" alt="Next JS">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Next JS</p>
           </div>
-          <div class="w-24 h-24 flex flex-col items-center justify-center gap-y-3">
-            <img class="h-12 hover:h-14 transition-all" src="src/custom/assets/svg/icon-figma.svg" alt="Figma">
-            <p class="m-0 text-dark-grey font-semibold text-[12px] leading-4">Figma</p>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-ts.svg" alt="TypeScript">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">TypeScript</p>
+          </div>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-vue.svg" alt="Vue JS">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Vue JS</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full p-4 bg-neutral-50/20 rounded-2xl flex flex-col">
+        <h3 class="mb-4 text-neutral-50 font-semibold">Design and prototyping:</h3>
+        <div class="flex justify-evenly">
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-xd.svg" alt="Adobe Xd">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Adobe Xd</p>
+          </div>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-illustrator.svg" alt="Adobe Illustrator">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Illustrator</p>
+          </div>
+          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+            <img class="h-8" src="src/custom/assets/svg/icon-figma.svg" alt="Figma">
+            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Figma</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="w-full py-16 px-8 bg-white flex flex-col justify-center">
-      <h1 class="mb-8 text-primary-blue font-semibold text-5xl leading-[64px]">
-        Experience
+    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col justify-center">
+      <h1 class="mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
+        Professional experience
       </h1>
-      <div class="max-w-xs sm:max-w-lg mx-auto p-8 flex flex-col gap-y-8 sm:flex-row bg-pearl rounded-xl items-center">
-        <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="rounded-full w-24">
-        <div class="sm:pl-8">
-          <span class="flex">
-            <a class="text-sm underline decoration-primary-blue" href="https://akuro.co">Akuro S.A.S.</a>
-            <p class="mx-2 text-sm">-</p>
-            <p class="text-sm">Full time</p>
-          </span>
-          <p class="text-sm">Remote position</p>
-          <p class="text-sm">Bogotá, Colombia</p>
-          <p class="text-sm">April 2021 - Present</p>
-          <p class="pt-4">In charge of implementing clean and responsive interfaces with readable and semantic code
-            making use of technologies such as HTML, Jinja2, Sass, vanilla CSS, vanilla JavaScript and occasionally in
-            frameworks such as React.</p>
+      <div
+        class="max-w-xs sm:max-w-lg mx-auto p-8 flex flex-col gap-y-4 sm:flex-row bg-neutral-50/20 rounded-2xl items-center">
+        <a href="https://akuro.co/" target="blank">
+          <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="rounded-full w-24 h-24">
+        </a>
+        <div class="sm:pl-8 text-neutral-200">
+          <div class="font-semibold">
+            <p class="text-xl">Front-end developer</p>
+            <a class="underline underline-offset-2 decoration-2 decoration-sky-500" href="https://akuro.co"
+              target="blank">Akuro
+              S.A.S.</a>
+          </div>
+          <div class="text-sm">
+            <p>Full time - Remote position</p>
+            <p>April 2021 - Present</p>
+            <p class="pt-3">In charge of implementing clean and responsive interfaces with readable and semantic code
+              using HTML, CSS, Sass, Jinja2, JavaScript and React.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section class="w-full py-16 px-8 bg-pearl flex flex-col justify-center">
-      <h1 class="mb-8 text-primary-blue font-semibold text-5xl leading-[64px]">
+    <section class="w-full py-16 px-8 bg-neutral-800 flex flex-col justify-center">
+      <h1 class="mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Projects
       </h1>
-      <p class="mb-3">I like to develop small personal projects in which I put into practice the new things I learn
-        (usually from online courses or books).</p>
-      <p class="mb-3">Some examples:</p>
-      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-4"> -->
-      <div class="w-full mx-auto flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
-        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
+      <div class="text-neutral-100">
+        <p class="mb-3">I like to develop small <a class="underline decoration-wavy decoration-sky-500"
+            href="https://github.com/abelareiza">personal projects</a> in which I put into practice the new things I
+          learn
+          (usually from online courses or books).</p>
+        <p>Some examples:</p>
+      </div>
+      <div class="w-full mx-auto mt-4 flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
+        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/ml-mobile.png" alt="Mockup image">
-          <figcaption class="text-center text-xs italic">Mercadolibre UI Clone just using Tailwind CSS</figcaption>
+          <figcaption class="text-center text-neutral-100 text-xs font-light">Mercadolibre UI Clone just using Tailwind
+            CSS</figcaption>
         </figure>
-        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
+        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/mini-weather-mobile.png" alt="Mockup image">
-          <figcaption class="text-center text-xs italic">Minimalist weather app made with React and consuming the
+          <figcaption class="text-center text-neutral-100 text-xs font-light">Minimalist weather app made with React and
+            consuming the
             OpenWeather API</figcaption>
         </figure>
-        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
+        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/playlist-fy-mobile.png" alt="Mockup image">
-          <figcaption class="text-center text-xs italic">Simple app to create playlists from the browser made with React
+          <figcaption class="text-center text-neutral-100 text-xs font-light">Simple app to create playlists from the
+            browser made with React
             and consuming the Spotify API</figcaption>
         </figure>
-        <figure class="snap-center shrink-0 w-fit bg-white rounded-xl p-8">
+        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/seoul-delights-mobile.png" alt="Mockup image">
-          <figcaption class="text-center text-xs italic">Small project created in order to practice and understand CSS
+          <figcaption class="text-center text-neutral-100 text-xs font-light">Small project created in order to practice
+            and understand CSS
             Grid and Subgrid</figcaption>
         </figure>
+      </div>
+      <div class="mt-4 flex justify-center gap-x-4 hover:gap-x-6 transition-all text-2xl text-neutral-200">
+        <i class="fas fa-long-arrow-alt-left"></i>
+        <i class="far fa-hand-pointer"></i>
+        <i class="fas fa-long-arrow-alt-right"></i>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-primary-blue">
-    <div class="max-w-6xl mx-auto p-12 flex justify-between items-center">
-      <div class="flex flex-col gap-y-2">
-        <a class="
-              font-semibold
-              text-white
-              transition-all
-              border-b-4 border-transparent
-              hover:border-primary-orange
-            " href="https://www.codecademy.com/profiles/Enjuavel">
-          Codecademy
-        </a>
-        <a class="
-              font-semibold
-              text-white
-              transition-all
-              border-b-4 border-transparent
-              hover:border-primary-orange
-            " href="https://github.com/abelareiza">
-          GitHub
-        </a>
-        <a class="
-              font-semibold
-              text-white
-              transition-all
-              border-b-4 border-transparent
-              hover:border-primary-orange
-            " href="https://www.linkedin.com/in/abelareiza">
-          LinkedIn
-        </a>
-        <a class="
-              font-semibold
-              text-white
-              transition-all
-              border-b-4 border-transparent
-              hover:border-primary-orange
-            " href="https://platzi.com/p/abelareiza/">
-          Platzi
-        </a>
+  <footer class="bg-sky-700">
+    <div class="max-w-6xl w-full px-8">
+      <div class="py-8 flex items-start justify-between">
+        <div class="flex flex-col gap-y-2 text-neutral-50">
+          <p class="m-0 font-light text-xs">Contact me:</p>
+          <div class="flex flex-col gap-y-1">
+            <a class="flex gap-x-1 items-center" href="mailto:abelareiza@gmail.com">
+              <i class="far fa-envelope"></i>
+              <p class="font-light text-xs">abelareiza@gmail.com</p>
+            </a>
+            <a class="flex gap-x-1 items-center" href="tel:3126803961">
+              <i class="fas fa-phone-alt"></i>
+              <p class="font-light text-xs">+57 312 680 3961</p>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-2 text-neutral-50">
+          <p class="m-0 font-light text-xs">Find me on:</p>
+          <div class="flex gap-x-4">
+            <a href="https://github.com/abelareiza">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/abelareiza">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abelareiza">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/Enjuavel">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
       </div>
+      <p class="pb-2 font-light text-xs text-neutral-50 text-center">© 2021 - Designed & coded by Abel Areiza</p>
     </div>
   </footer>
 
