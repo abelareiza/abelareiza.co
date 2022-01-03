@@ -2,23 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-#explore-btn {
-  box-shadow: 4px 4px 0 black;
-}
-
-#explore-btn:hover,
-#explore-btn:focus {
-  box-shadow: none;
-  transform: translate(4px, 4px);
-}
-
+/* Visibility toggle class */
 .hidden {
   opacity: 0;
 }
 
+/* Terminal underscore decorator */
 .console-underscore {
   display: inline-block;
   position: relative;
   top: -0.14em;
   left: 10px;
+}
+
+/* Burger menu button */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger {
+  width: 32px;
+  height: 4px;
+  background: #ea580c;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  background: #ea580c;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-12px);
+}
+.menu-btn__burger::after {
+  transform: translateY(12px);
+}
+
+/* Burger menu button animation */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-22px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  background: #ea580c;
+  transform: rotate(45deg) translate(16px, -16px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  background: #ea580c;
+  transform: rotate(-45deg) translate(16px, 16px);
+}
+
+/* BUrger menu content transition */
+.burger-menu.open {
+  opacity: 1;
+  transition-duration: 150ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
 }

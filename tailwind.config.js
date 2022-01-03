@@ -9,11 +9,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'dark-grey': '#3E3E3E',
-        'primary-blue': '#3245B3',
-        'primary-orange': '#FF8167',
-        'island': '#F8EDDA',
-        'pearl': '#FCF8ED',
+        
       },
     },
   },
