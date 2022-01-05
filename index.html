@@ -18,61 +18,63 @@
 
 <body class="bg-neutral-900">
   <!-- Header -->
-  <header class="max-w-6xl mx-auto px-8 w-full h-32 bg-neutral-900 flex justify-between items-center">
-    <a href="/">
-      <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="..." />
-    </a>
-
-    <div class="menu-btn md:hidden">
-      <div class="menu-btn__burger"></div>
+  <header class="bg-neutral-900">
+    <div class="w-full md:max-w-md mx-auto px-8 md:px-0 h-32 flex justify-between items-center">
+      <a href="/">
+        <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="..." />
+      </a>
+  
+      <div class="menu-btn lg:hidden">
+        <div class="menu-btn__burger"></div>
+      </div>
+  
+      <nav class="hidden lg:flex gap-x-6">
+        <ul>
+          <li>
+            <a class="
+                  font-semibold
+                  text-dark-grey
+                  transition-all
+                  border-b-4 border-transparent
+                  hover:border-orange-500
+                " href="#">About me</a>
+          </li>
+          <li>
+            <a class="
+                  font-semibold
+                  text-dark-grey
+                  transition-all
+                  border-b-4 border-transparent
+                  hover:border-orange-500
+                " href="#">Skills</a>
+          </li>
+          <li>
+            <a class="
+                  font-semibold
+                  text-dark-grey
+                  transition-all
+                  border-b-4 border-transparent
+                  hover:border-orange-500
+                " href="#">Projects</a>
+          </li>
+          <li>
+            <a class="
+                  font-semibold
+                  text-dark-grey
+                  transition-all
+                  border-b-4 border-transparent
+                  hover:border-orange-500
+                " href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="hidden md:flex gap-x-6">
-      <ul>
-        <li>
-          <a class="
-                font-semibold
-                text-dark-grey
-                transition-all
-                border-b-4 border-transparent
-                hover:border-orange-500
-              " href="#">About me</a>
-        </li>
-        <li>
-          <a class="
-                font-semibold
-                text-dark-grey
-                transition-all
-                border-b-4 border-transparent
-                hover:border-orange-500
-              " href="#">Skills</a>
-        </li>
-        <li>
-          <a class="
-                font-semibold
-                text-dark-grey
-                transition-all
-                border-b-4 border-transparent
-                hover:border-orange-500
-              " href="#">Projects</a>
-        </li>
-        <li>
-          <a class="
-                font-semibold
-                text-dark-grey
-                transition-all
-                border-b-4 border-transparent
-                hover:border-orange-500
-              " href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <!-- Mobile menu -->
     <div
-      class="burger-menu w-fit invisible opacity-0 absolute right-0 p-12 bg-neutral-50 flex flex-col gap-y-4 items-end transition-all">
+      class="burger-menu w-fit max-w-sm invisible opacity-0 absolute md:left-1/3 p-12 bg-neutral-50 flex flex-wrap flex-col md:flex-row gap-4 items-end md:items-center md:justify-evenly transition-all">
       <a class="
         font-semibold
         text-dark-grey
@@ -112,30 +114,32 @@
 
     <!-- Presentation -->
     <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col justify-center">
-      <div class=" bg-black">
-        <p class="px-4 py-3 text-white font-mono">> Hi, my name is<span class="console-underscore"
-            id="console">&#95;</span>
-        </p>
+      <div class="w-full md:max-w-md md:mx-auto">
+        <div class=" bg-black">
+          <p class="px-4 py-3 text-white font-mono">> Hi, my name is<span class="console-underscore"
+              id="console">&#95;</span>
+          </p>
+        </div>
+        <h1 class="mt-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
+          Abel Areiza.
+        </h1>
+        <h1 class="max-w-sm mt-4 text-neutral-200 font-semibold text-[36px] leading-[48px]">
+          And I'm a Front-end software developer
+        </h1>
+        <a href="https://github.com/abelareiza"
+          class="w-fit hover:bg-orange-400 hover:pl-6 transition-all mt-8 px-4 py-3 bg-orange-600 flex items-center justify-between text-neutral-50 font-bold">
+          Explore Projects
+          <i class="fas fa-arrow-right ml-4"></i>
+        </a>
       </div>
-      <h1 class="mt-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
-        Abel Areiza.
-      </h1>
-      <h1 class="mt-4 text-neutral-200 font-semibold text-[36px] leading-[48px]">
-        And I'm a Front-end software developer
-      </h1>
-      <a href="https://github.com/abelareiza"
-        class="w-fit hover:bg-orange-400 hover:pl-6 transition-all mt-8 px-4 py-3 bg-orange-600 flex items-center justify-between text-neutral-50 font-bold">
-        Explore Projects
-        <i class="fas fa-arrow-right ml-4"></i>
-      </a>
     </section>
 
     <!-- About me -->
-    <section class="w-full px-8 py-16 bg-neutral-900 flex flex-col justify-center" id="about-me">
+    <section class="w-full px-8 py-16 bg-neutral-900 flex flex-col md:items-center justify-center" id="about-me">
       <h1 class="mb-4 text-neutral-200 font-semibold text-5xl leading-[64px]">
         About me
       </h1>
-      <div class="text-neutral-100">
+      <div class="max-w-md text-neutral-100">
         <p class="mb-3">Hey, there!</p>
         <p class="mb-3">
           I'm a front-end software developer and systems engineering student with a passion for web UI design and
@@ -155,101 +159,103 @@
     </section>
 
     <!-- Skills -->
-    <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col justify-center" id="skills">
+    <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col md:items-center justify-center" id="skills">
       <h1 class="mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Skills
       </h1>
-      <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
-        <h3 class="mb-4 text-neutral-50 font-semibold">Proficient:</h3>
-        <div class="flex justify-evenly">
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-html.svg" alt="HTML5">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">HTML 5</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-css.svg" alt="CSS3">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">CSS 3</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-sass.svg" alt="Sass">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Sass</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-tailwindcss.svg" alt="TailwindCSS">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Tailwind</p>
-          </div>
-        </div>
-      </div>
-      <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
-        <h3 class="mb-4 text-neutral-50 font-semibold">Intermediate:</h3>
-        <div class="flex justify-evenly">
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-js.svg" alt="JavaScript">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">JavaScript</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-react.svg" alt="React">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">React</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-jquery.svg" alt="jQuery">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">jQuery</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-python.svg" alt="Python">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Python</p>
+      <div class="w-full md:max-w-md">
+        <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+          <h3 class="mb-4 text-neutral-50 font-semibold">Proficient:</h3>
+          <div class="flex justify-evenly">
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-html.svg" alt="HTML5">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">HTML 5</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-css.svg" alt="CSS3">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">CSS 3</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-sass.svg" alt="Sass">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Sass</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-tailwindcss.svg" alt="TailwindCSS">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Tailwind</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
-        <h3 class="mb-4 text-neutral-50 font-semibold">Learning:</h3>
-        <div class="flex justify-evenly">
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-flutter.svg" alt="Flutter">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Flutter</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-nextjs.svg" alt="Next JS">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Next JS</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-ts.svg" alt="TypeScript">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">TypeScript</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-vue.svg" alt="Vue JS">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Vue JS</p>
+        <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+          <h3 class="mb-4 text-neutral-50 font-semibold">Intermediate:</h3>
+          <div class="flex justify-evenly">
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-js.svg" alt="JavaScript">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">JavaScript</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-react.svg" alt="React">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">React</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-jquery.svg" alt="jQuery">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">jQuery</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-python.svg" alt="Python">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Python</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full p-4 bg-neutral-50/20 rounded-2xl flex flex-col">
-        <h3 class="mb-4 text-neutral-50 font-semibold">Design and prototyping:</h3>
-        <div class="flex justify-evenly">
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-xd.svg" alt="Adobe Xd">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Adobe Xd</p>
+        <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+          <h3 class="mb-4 text-neutral-50 font-semibold">Learning:</h3>
+          <div class="flex justify-evenly">
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-flutter.svg" alt="Flutter">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Flutter</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-nextjs.svg" alt="Next JS">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Next JS</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-ts.svg" alt="TypeScript">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">TypeScript</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-vue.svg" alt="Vue JS">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Vue JS</p>
+            </div>
           </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-illustrator.svg" alt="Adobe Illustrator">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Illustrator</p>
-          </div>
-          <div class="w-16 h-16 flex flex-col items-center gap-y-2">
-            <img class="h-8" src="src/custom/assets/svg/icon-figma.svg" alt="Figma">
-            <p class="m-0 text-neutral-200 font-bold text-xs text-center">Figma</p>
+        </div>
+        <div class="w-full p-4 bg-neutral-50/20 rounded-2xl flex flex-col">
+          <h3 class="mb-4 text-neutral-50 font-semibold">Design and prototyping:</h3>
+          <div class="flex justify-evenly">
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-xd.svg" alt="Adobe Xd">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Adobe Xd</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-illustrator.svg" alt="Adobe Illustrator">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Illustrator</p>
+            </div>
+            <div class="w-16 h-16 flex flex-col items-center gap-y-2">
+              <img class="h-8" src="src/custom/assets/svg/icon-figma.svg" alt="Figma">
+              <p class="m-0 text-neutral-200 font-bold text-xs text-center">Figma</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col justify-center" id="experience">
+    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col md:items-center justify-center" id="experience">
       <h1 class="mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Experience
       </h1>
       <div
-        class="max-w-xs sm:max-w-lg mx-auto p-8 flex flex-col gap-y-4 sm:flex-row bg-neutral-50/20 rounded-2xl items-center">
+        class="max-w-xs sm:max-w-md mx-auto p-8 flex flex-col gap-y-4 sm:flex-row bg-neutral-50/20 rounded-2xl items-center">
         <a href="https://akuro.co/" target="blank">
-          <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="rounded-full w-24 h-24">
+          <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="max-w-fit rounded-full w-24 h-24">
         </a>
         <div class="sm:pl-8 text-neutral-200">
           <div class="font-semibold">
@@ -269,11 +275,11 @@
     </section>
 
     <!-- Projects -->
-    <section class="w-full py-16 px-8 bg-neutral-800 flex flex-col justify-center" id="projects">
+    <section class="w-full py-16 px-8 bg-neutral-800 flex flex-col md:items-center justify-center" id="projects">
       <h1 class="mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Projects
       </h1>
-      <div class="text-neutral-100">
+      <div class="max-w-md text-neutral-100">
         <p class="mb-3">I like to develop small <a
             class="underline underline-offset-2 decoration-2 decoration-orange-500"
             href="https://github.com/abelareiza">personal projects</a> in which I put into practice the new things I
@@ -281,25 +287,25 @@
           (usually from online courses or books).</p>
         <p>Some examples:</p>
       </div>
-      <div class="w-full mx-auto mt-4 flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
-        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
+      <div class="w-full max-w-md mt-4 py-8 md:px-24 bg-neutral-900 rounded-2xl flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
+        <figure class="snap-center shrink-0 w-fit md:w-64 px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/ml-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-neutral-100 text-xs font-light">Mercadolibre UI Clone just using Tailwind
             CSS</figcaption>
         </figure>
-        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
+        <figure class="snap-center shrink-0 w-fit md:w-64 px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/mini-weather-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-neutral-100 text-xs font-light">Minimalist weather app made with React and
             consuming the
             OpenWeather API</figcaption>
         </figure>
-        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
+        <figure class="snap-center shrink-0 w-fit md:w-64 px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/playlist-fy-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-neutral-100 text-xs font-light">Simple app to create playlists from the
             browser made with React
             and consuming the Spotify API</figcaption>
         </figure>
-        <figure class="snap-center shrink-0 w-fit px-8 py-4 bg-neutral-50/20 rounded-2xl">
+        <figure class="snap-center shrink-0 w-fit md:w-64 px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/seoul-delights-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-neutral-100 text-xs font-light">Small project created in order to practice
             and understand CSS
@@ -314,25 +320,27 @@
     </section>
 
     <!-- Contact -->
-    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col justify-center" id="contact">
+    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col md:items-center justify-center" id="contact">
       <h1 class="mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Contact
       </h1>
-      <p class="text-neutral-100">My <a class="underline underline-offset-2 decoration-2 decoration-orange-500"
-          href="mailto:abelareiza@gmail.com">inbox</a> is always open, so if you want to say hi, ask for my resume or
-        would like to work with me, you can write to me and I will reply to you as soon as possible.</p>
-      <a href="mailto:abelareiza@gmail.com"
-        class="w-fit hover:bg-orange-400 hover:pl-6 transition-all mt-8 px-4 py-3 bg-orange-600 flex items-center justify-between text-neutral-50 font-bold">
-        Write email
-        <i class="fas fa-envelope-open ml-4"></i>
-      </a>
+      <div class="md:max-w-md">
+        <p class="text-neutral-100">My <a class="underline underline-offset-2 decoration-2 decoration-orange-500"
+            href="mailto:abelareiza@gmail.com">inbox</a> is always open, so if you want to say hi, ask for my resume or
+          would like to work with me, you can write to me and I will reply to you as soon as possible.</p>
+        <a href="mailto:abelareiza@gmail.com"
+          class="w-fit hover:bg-orange-400 hover:pl-6 transition-all mt-8 px-4 py-3 bg-orange-600 flex items-center justify-between text-neutral-50 font-bold">
+          Write email
+          <i class="fas fa-envelope-open ml-4"></i>
+        </a>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="bg-orange-600">
-    <div class="max-w-6xl w-full px-8">
-      <div class="py-8 flex flex-col gap-y-8">
+    <div class="w-full md:max-w-md mx-auto px-8 md:px-0">
+      <div class="py-12 flex flex-col md:flex-row md:justify-between gap-8">
         <div class="flex flex-col gap-y-2 text-neutral-50">
           <p class="m-0 font-light">Contact me:</p>
           <div class="flex flex-col gap-y-2">
@@ -346,9 +354,9 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-col gap-y-2 text-neutral-50">
+        <div class="flex flex-col md:items-center gap-y-2 text-neutral-50">
           <p class="m-0 font-light">Find me on:</p>
-          <div class="flex gap-x-4 text-3xl">
+          <div class="flex gap-4 text-3xl">
             <a href="https://github.com/abelareiza">
               <i class="fab fa-github"></i>
             </a>
