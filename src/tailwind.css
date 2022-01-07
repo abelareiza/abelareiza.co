@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Visibility toggle class */
-.hidden {
+.underscore-hidden {
   opacity: 0;
 }
 
@@ -63,7 +63,7 @@
   transform: rotate(-45deg) translate(16px, 16px);
 }
 
-/* BUrger menu content transition */
+/* Burger menu content transition */
 .burger-menu.open {
   opacity: 1;
   transition-duration: 150ms;

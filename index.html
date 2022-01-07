@@ -11,62 +11,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Mono&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body class="bg-neutral-900">
   <!-- Header -->
   <header class="bg-neutral-900">
-    <div class="w-full md:max-w-md mx-auto px-8 md:px-0 h-32 flex justify-between items-center">
+    <div
+      class="w-full sm:max-w-md lg:max-w-screen-md xl:max-w-screen-lg mx-auto px-8 sm:px-0 h-32 flex justify-between items-center">
       <a href="/">
         <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="..." />
       </a>
-  
+
       <div class="menu-btn lg:hidden">
         <div class="menu-btn__burger"></div>
       </div>
-  
+
       <nav class="hidden lg:flex gap-x-6">
-        <ul>
-          <li>
-            <a class="
-                  font-semibold
-                  text-dark-grey
-                  transition-all
-                  border-b-4 border-transparent
-                  hover:border-orange-500
-                " href="#">About me</a>
-          </li>
-          <li>
-            <a class="
-                  font-semibold
-                  text-dark-grey
-                  transition-all
-                  border-b-4 border-transparent
-                  hover:border-orange-500
-                " href="#">Skills</a>
-          </li>
-          <li>
-            <a class="
-                  font-semibold
-                  text-dark-grey
-                  transition-all
-                  border-b-4 border-transparent
-                  hover:border-orange-500
-                " href="#">Projects</a>
-          </li>
-          <li>
-            <a class="
-                  font-semibold
-                  text-dark-grey
-                  transition-all
-                  border-b-4 border-transparent
-                  hover:border-orange-500
-                " href="#">Contact</a>
-          </li>
-        </ul>
+        <a class="
+        font-semibold
+        text-neutral-50
+        transition-all
+        border-b-4 border-transparent
+        hover:border-orange-500
+      " href="#about-me">About me</a>
+        <a class="
+        font-semibold
+        text-neutral-50
+        transition-all
+        border-b-4 border-transparent
+        hover:border-orange-500
+      " href="#skills">Skills</a>
+        <a class="
+        font-semibold
+        text-neutral-50
+        transition-all
+        border-b-4 border-transparent
+        hover:border-orange-500
+      " href="#experience">Experience</a>
+        <a class="
+        font-semibold
+        text-neutral-50
+        transition-all
+        border-b-4 border-transparent
+        hover:border-orange-500
+      " href="#projects">Projects</a>
+        <a class="
+        font-semibold
+        text-neutral-50
+        transition-all
+        border-b-4 border-transparent
+        hover:border-orange-500
+      " href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -77,35 +73,35 @@
       class="burger-menu w-fit md:max-w-sm invisible opacity-0 absolute right-0 md:right-1/4 p-12 bg-neutral-50 flex flex-wrap flex-col md:flex-row gap-4 items-end md:items-center md:justify-end transition-all">
       <a class="
         font-semibold
-        text-dark-grey
+        text-neutral-800
         transition-all
         border-b-4 border-transparent
         hover:border-orange-500
       " href="#about-me">About me</a>
       <a class="
         font-semibold
-        text-dark-grey
+        text-neutral-800
         transition-all
         border-b-4 border-transparent
         hover:border-orange-500
       " href="#skills">Skills</a>
       <a class="
         font-semibold
-        text-dark-grey
+        text-neutral-800
         transition-all
         border-b-4 border-transparent
         hover:border-orange-500
       " href="#experience">Experience</a>
       <a class="
         font-semibold
-        text-dark-grey
+        text-neutral-800
         transition-all
         border-b-4 border-transparent
         hover:border-orange-500
       " href="#projects">Projects</a>
       <a class="
         font-semibold
-        text-dark-grey
+        text-neutral-800
         transition-all
         border-b-4 border-transparent
         hover:border-orange-500
@@ -114,7 +110,7 @@
 
     <!-- Presentation -->
     <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col justify-center">
-      <div class="w-full md:max-w-md md:mx-auto">
+      <div class="w-full max-w-md sm:mx-auto">
         <div class=" bg-black">
           <p class="px-4 py-3 text-white font-mono">> Hi, my name is<span class="console-underscore"
               id="console">&#95;</span>
@@ -135,11 +131,13 @@
     </section>
 
     <!-- About me -->
-    <section class="w-full px-8 py-16 bg-neutral-900 flex flex-col md:items-center justify-center" id="about-me">
-      <h1 class="mb-4 text-neutral-200 font-semibold text-5xl leading-[64px]">
+    <section
+      class="w-full max-w-md sm:mx-auto lg:max-w-screen-md px-8 sm:px-0 py-16 bg-neutral-900 flex flex-col md:items-center lg:items-start lg:flex-row lg:justify-between"
+      id="about-me">
+      <h1 class="sm:text-center lg:text-left mb-4 text-neutral-200 font-semibold text-5xl leading-[64px]">
         About me
       </h1>
-      <div class="max-w-md text-neutral-100">
+      <div class="text-neutral-100 lg:max-w-md">
         <p class="mb-3">Hey, there!</p>
         <p class="mb-3">
           I'm a front-end software developer and systems engineering student with a passion for web UI design and
@@ -159,12 +157,12 @@
     </section>
 
     <!-- Skills -->
-    <section class="w-full px-8 py-16 bg-neutral-800 flex flex-col md:items-center justify-center" id="skills">
-      <h1 class="mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
+    <section class="w-full px-8 sm:px-0 py-16 bg-neutral-800 flex flex-col md:items-center" id="skills">
+      <h1 class="sm:text-center mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Skills
       </h1>
-      <div class="w-full md:max-w-md">
-        <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+      <div class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="w-full p-4 mb-8 lg:mb-0 bg-neutral-50/20 rounded-2xl flex flex-col">
           <h3 class="mb-4 text-neutral-50 font-semibold">Proficient:</h3>
           <div class="flex justify-evenly">
             <div class="w-16 h-16 flex flex-col items-center gap-y-2">
@@ -185,7 +183,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+        <div class="w-full p-4 mb-8 lg:mb-0 bg-neutral-50/20 rounded-2xl flex flex-col">
           <h3 class="mb-4 text-neutral-50 font-semibold">Intermediate:</h3>
           <div class="flex justify-evenly">
             <div class="w-16 h-16 flex flex-col items-center gap-y-2">
@@ -206,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full p-4 mb-8 bg-neutral-50/20 rounded-2xl flex flex-col">
+        <div class="w-full p-4 mb-8 lg:mb-0 bg-neutral-50/20 rounded-2xl flex flex-col">
           <h3 class="mb-4 text-neutral-50 font-semibold">Learning:</h3>
           <div class="flex justify-evenly">
             <div class="w-16 h-16 flex flex-col items-center gap-y-2">
@@ -248,12 +246,12 @@
     </section>
 
     <!-- Experience -->
-    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col md:items-center justify-center" id="experience">
-      <h1 class="mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
+    <section class="w-full max-w-md sm:mx-auto lg:max-w-screen-md px-8 sm:px-0 py-16 bg-neutral-900 flex flex-col md:items-center lg:items-start lg:flex-row lg:justify-between" id="experience">
+      <h1 class="sm:text-center mb-8 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Experience
       </h1>
       <div
-        class="max-w-xs sm:max-w-md mx-auto p-8 flex flex-col gap-y-4 sm:flex-row bg-neutral-50/20 rounded-2xl items-center">
+        class="max-w-xs sm:max-w-md mx-auto lg:mx-0 p-8 flex flex-col gap-y-4 sm:flex-row bg-neutral-50/20 rounded-2xl items-center">
         <a href="https://akuro.co/" target="blank">
           <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="max-w-fit rounded-full w-24 h-24">
         </a>
@@ -275,11 +273,11 @@
     </section>
 
     <!-- Projects -->
-    <section class="w-full py-16 px-8 bg-neutral-800 flex flex-col md:items-center justify-center" id="projects">
-      <h1 class="mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
-        Projects
-      </h1>
-      <div class="max-w-md text-neutral-100">
+    <section class="w-full px-8 sm:px-0 py-16 bg-neutral-800 flex flex-col md:items-center" id="projects">
+      <div class="w-full sm:max-w-md sm:mx-auto text-neutral-100">
+        <h1 class="sm:text-center mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
+          Projects
+        </h1>
         <p class="mb-3">I like to develop small <a
             class="underline underline-offset-2 decoration-2 decoration-orange-500"
             href="https://github.com/abelareiza">personal projects</a> in which I put into practice the new things I
@@ -287,7 +285,8 @@
           (usually from online courses or books).</p>
         <p>Some examples:</p>
       </div>
-      <div class="w-full mx-auto max-w-md mt-4 md:py-8 md:px-24 md:bg-neutral-900 md:rounded-2xl flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
+      <div
+        class="w-full mx-auto max-w-md mt-4 md:py-8 md:px-24 md:bg-neutral-900 md:rounded-2xl flex gap-x-8 overflow-x-auto snap-mandatory snap-x">
         <figure class="snap-center shrink-0 w-fit md:w-64 px-8 py-4 bg-neutral-50/20 rounded-2xl">
           <img src="src/custom/assets/png/ml-mobile.png" alt="Mockup image">
           <figcaption class="text-center text-neutral-100 text-xs font-light">Mercadolibre UI Clone just using Tailwind
@@ -320,8 +319,8 @@
     </section>
 
     <!-- Contact -->
-    <section class="w-full py-16 px-8 bg-neutral-900 flex flex-col md:items-center justify-center" id="contact">
-      <h1 class="mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
+    <section class="w-full max-w-md sm:mx-auto px-8 sm:px-0 py-16 bg-neutral-900 flex flex-col md:items-center" id="contact">
+      <h1 class="sm:text-center mb-4 text-neutral-50 font-semibold text-5xl leading-[64px]">
         Contact
       </h1>
       <div class="md:max-w-md">
@@ -339,7 +338,7 @@
 
   <!-- Footer -->
   <footer class="bg-orange-600">
-    <div class="w-full md:max-w-md mx-auto px-8 md:px-0">
+    <div class="w-full sm:max-w-md mx-auto px-8 sm:px-0">
       <div class="py-12 flex flex-col md:flex-row md:justify-between gap-8">
         <div class="flex flex-col gap-y-2 text-neutral-50">
           <p class="m-0 font-light">Contact me:</p>
@@ -376,6 +375,7 @@
     </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/e1167abf4c.js" crossorigin="anonymous"></script>
   <script src="src/custom/js/console-underscore.js"></script>
   <script src="src/custom/js/burger-button.js"></script>
 </body>

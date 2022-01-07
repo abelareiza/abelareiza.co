@@ -6,7 +6,7 @@ function consoleText() {
 
   window.setInterval(function () {
     if (visible === true) {
-      con.className = "console-underscore hidden"
+      con.className = "console-underscore underscore-hidden"
       visible = false;
     } else {
       con.className = "console-underscore"
