@@ -770,6 +770,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   visibility: visible;
 }
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
 .hover\:gap-x-6:hover {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
