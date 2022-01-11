@@ -450,11 +450,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-24 {
   width: 6rem;
 }
-.max-w-md {
-  max-width: 28rem;
-}
 .max-w-sm {
   max-width: 24rem;
+}
+.max-w-md {
+  max-width: 28rem;
 }
 .max-w-xs {
   max-width: 20rem;
@@ -934,21 +934,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-items: flex-end;
   }
 
-  .lg\:justify-end {
-    justify-content: flex-end;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
   }
 
   .lg\:gap-4 {
     gap: 1rem;
-  }
-
-  .lg\:gap-x-0 {
-    -moz-column-gap: 0px;
-         column-gap: 0px;
   }
 
   .lg\:gap-x-4 {
@@ -962,10 +953,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:bg-transparent {
     background-color: transparent;
-  }
-
-  .lg\:bg-none {
-    background-image: none;
   }
 
   .lg\:px-0 {
