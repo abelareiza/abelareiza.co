@@ -29,7 +29,7 @@
 .menu-btn__burger {
   width: 32px;
   height: 4px;
-  background: #ea580c;
+  background: #1e293b;
   transition: all 0.4s ease-in-out;
 }
 .menu-btn__burger::before,
@@ -38,7 +38,7 @@
   position: absolute;
   width: 32px;
   height: 4px;
-  background: #ea580c;
+  background: #1e293b;
   transition: all 0.4s ease-in-out;
 }
 .menu-btn__burger::before {
@@ -55,11 +55,11 @@
   box-shadow: none;
 }
 .menu-btn.open .menu-btn__burger::before {
-  background: #ea580c;
+  background: #1e293b;
   transform: rotate(45deg) translate(16px, -16px);
 }
 .menu-btn.open .menu-btn__burger::after {
-  background: #ea580c;
+  background: #1e293b;
   transform: rotate(-45deg) translate(16px, 16px);
 }
 
