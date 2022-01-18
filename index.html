@@ -1,216 +1,180 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abel Areiza</title>
-  <link rel="stylesheet" href="dist/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Mono&display=swap"
-    rel="stylesheet" />
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="dist/style.css" />
 </head>
 
-<body class="bg-slate-900">
-  <!-- Header -->
-  <header class="bg-yellow-400">
-    <div
-      class="w-full sm:max-w-md lg:max-w-screen-md xl:max-w-screen-lg mx-auto px-8 sm:px-0 h-32 flex justify-between items-center">
-      <a href="/">
-        <img src="src/custom/assets/svg/logo-navbar-mobile.svg" alt="..." />
-      </a>
-
-      <div class="menu-btn lg:hidden">
-        <div class="menu-btn__burger"></div>
+<body class="bg-gray-800">
+  <header>
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="/" class="flex">
+          <img src="#" alt="">
+          <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">Abel Areiza</span>
+        </a>
+        <button data-collapse-toggle="mobile-menu" type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu-2" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Experience</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <nav class="hidden lg:flex gap-x-6">
-        <a class="
-        font-semibold
-        text-slate-50
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#about-me">About me</a>
-        <a class="
-        font-semibold
-        text-slate-50
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#experience">Experience</a>
-        <a class="
-        font-semibold
-        text-slate-50
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#projects">Projects</a>
-        <a class="
-        font-semibold
-        text-slate-50
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#contact">Contact</a>
-      </nav>
-    </div>
   </header>
 
-  <main>
-    <!-- Mobile menu -->
-    <div
-      class="burger-menu w-fit md:max-w-sm invisible opacity-0 absolute right-0 md:right-1/4 p-12 bg-slate-50 flex flex-wrap flex-col md:flex-row gap-4 items-end md:items-center md:justify-end transition-all">
-      <a class="
-        font-semibold
-        text-slate-800
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#about-me">About me</a>
-      <a class="
-        font-semibold
-        text-slate-800
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#experience">Experience</a>
-      <a class="
-        font-semibold
-        text-slate-800
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#projects">Projects</a>
-      <a class="
-        font-semibold
-        text-slate-800
-        transition-all
-        border-b-4 border-transparent
-        hover:border-yellow-400
-      " href="#contact">Contact</a>
-    </div>
+  <main class="max-w-screen-xl mx-auto">
 
     <!-- Presentation -->
-    <section class="w-full px-8 py-16 bg-slate-700 flex flex-col justify-center">
-      <div class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md">
-        <div class=" bg-black">
-          <p class="px-4 py-3 text-white font-mono">> Hi, my name is<span class="console-underscore"
-              id="console">&#95;</span>
-          </p>
-        </div>
-        <div class="lg:flex lg:justify-between lg:items-end">
-          <div class="">
-            <h1 class="mt-8 text-slate-50 font-semibold text-5xl leading-[64px]">
-              Abel Areiza.
-            </h1>
-            <h1 class="max-w-sm mt-4 text-slate-100 font-normal text-[36px] leading-[48px]">
-              And I'm a Front-end software developer
-            </h1>
-          </div>
-          <a href="https://github.com/abelareiza" target="blank"
-            class="w-fit hover:bg-yellow-500 hover:pl-6 transition-all mt-8 px-4 py-3 bg-yellow-400 flex items-center justify-between text-slate-800 font-semibold">
-            Explore Projects
-            <i class="fas fa-arrow-right ml-4"></i>
-          </a>
-        </div>
+    <section class="h-screen border-b-2 border-gray-200/20 flex flex-col justify-center">
+      <div class="">
+        <h1 class="mb-4 text-white font-semibold text-3xl">
+          Abel Areiza
+        </h1>
+        <h1 class="mb-2 text-white font-normal text-2xl">
+          And I'm a Front-end software developer
+        </h1>
+        <a href="https://github.com/abelareiza" target="blank">
+          <button type="button"
+            class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Explore
+            Projects</button>
+        </a>
       </div>
     </section>
 
     <!-- About me -->
-    <section class="w-full px-8 sm:px-0 py-16 bg-slate-500" id="about-me">
-      <h1
-        class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md mb-4 text-slate-50 font-semibold text-5xl leading-[64px]">
-        About me
-      </h1>
-      <div
-        class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md text-slate-100 flex flex-col md:items-center lg:items-start lg:flex-row lg:gap-x-16 lg:justify-between">
-        <div class="lg:max-w-md">
-          <p class="mb-3">Hey, there!</p>
-          <p class="mb-3">
-            I'm a front-end software developer and systems engineering student with a passion for web UI design and
-            development.
-          </p>
-          <p class="mb-3">
-            My interest in programming began in 2016, when browsing the internet I came across a free Python course.
-          </p>
-          <p class="mb-3">
-            Currently, and for the last 9 months I have been working as a full-time developer for a local company in
-            which
-            we develop and implement software solutions (mainly web projects) for clients from various countries.
-          </p>
-          <p class="mb-3">
-            Some of my favorite hobbies involve reading, music, video games and cycling.
-          </p>
+    <section class="max-w-screen-lg mx-auto h-screen border-b-2 border-gray-200/20 flex flex-col justify-center">
+      <h3 class="mb-6 text-white font-semibold text-2xl">About me</h3>
+      <div class="flex flex-col">
+        <div class="w-full flex justify-between">
+          <div class="max-w-lg text-white font-normal">
+            <p class="mb-3">Hey, there!</p>
+            <p class="mb-3">
+              I'm a front-end software developer and systems engineering student with a passion for web UI design and
+              development.
+            </p>
+            <p class="mb-3">
+              My interest in programming began in 2016, when browsing the internet I came across a free Python course.
+            </p>
+            <p class="mb-3">
+              Currently, and for the last 9 months I have been working as a full-time developer for a local company in
+              which
+              we develop and implement software solutions (mainly web projects) for clients from various countries.
+            </p>
+            <p class="mb-3">
+              Some of my favorite hobbies involve reading, music, video games and cycling.
+            </p>
+          </div>
+          <div class="max-w-sm">
+            <img src="src/custom/assets/jpg/profile-pic.jpeg" alt="Abel profile picture">
+          </div>
         </div>
-        <div class="mt-8 flex flex-col items-center">
-          <p class="mb-3 text-slate-100">Things I currently enjoy working/playing with:</p>
+        <div class="mt-4 flex flex-col">
+          <p class="mb-2 text-white">Things I currently enjoy working/playing with:</p>
           <div class="flex flex-wrap gap-2">
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-orange-500 rounded-full h-3 w-3"></div>
               HTML 5
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-blue-600 rounded-full h-3 w-3"></div>
               CSS 3
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-pink-600 rounded-full h-3 w-3"></div>
               Scss
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-sky-400 rounded-full h-3 w-3"></div>
               TailwindCSS
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-yellow-300 rounded-full h-3 w-3"></div>
               JavaScript
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-blue-800 rounded-full h-3 w-3"></div>
               jQuery
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-cyan-400 rounded-full h-3 w-3"></div>
               React
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-emerald-500 rounded-full h-3 w-3"></div>
               Vue JS
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-amber-400 rounded-full h-3 w-3"></div>
               Python
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-blue-600 rounded-full h-3 w-3"></div>
               Flutter
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-fuchsia-700 rounded-full h-3 w-3"></div>
               Adobe Xd
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-orange-400 rounded-full h-3 w-3"></div>
               Adobe Illustrator
             </div>
             <div
-              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-slate-50 px-3 py-1 flex items-center justify-between gap-x-2">
+              class="bg-slate-700 hover:bg-slate-800 transition-all text-sm cursor-pointer text-white px-3 py-1 flex items-center justify-between gap-x-2">
               <div class="bg-purple-500 rounded-full h-3 w-3"></div>
               Figma
             </div>
@@ -220,128 +184,127 @@
     </section>
 
     <!-- Experience -->
-    <section class="w-full px-8 sm:px-0 py-16 bg-slate-700" id="experience">
-      <div
-        class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md flex flex-col md:items-center lg:items-start lg:flex-row lg:justify-between">
-        <h1 class="text-center mb-8 text-slate-50 font-semibold text-5xl leading-[64px]">
-          Experience
-        </h1>
-        <div
-          class="max-w-xs sm:max-w-md mx-auto lg:mx-0 p-8 flex flex-col gap-y-4 sm:flex-row bg-slate-900/40 rounded-2xl items-center">
-          <a href="https://akuro.co/" target="blank">
-            <img src="src/custom/assets/png/akuro-logo.png" alt="Logo Akuro" class="max-w-fit rounded-full w-24 h-24">
-          </a>
-          <div class="sm:pl-8 text-slate-100">
-            <div class="font-semibold">
-              <p class="text-xl">Front-end developer</p>
-              <a class="underline underline-offset-2 decoration-2 decoration-yellow-400" href="https://akuro.co"
-                target="blank">Akuro
-                S.A.S.</a>
-            </div>
-            <div class="text-sm">
-              <p>Full time - Remote position</p>
-              <p>April 2021 - Present</p>
-              <p class="pt-3">In charge of implementing clean and responsive interfaces with readable and semantic code
-                using HTML, CSS, Sass, Jinja2, JavaScript and React.</p>
-            </div>
+    <section class="max-w-screen-lg mx-auto h-screen border-b-2 border-gray-200/20 flex flex-col justify-center">
+      <h3 class="mb-6 text-white font-semibold text-2xl">Experience</h3>
+      <ol class="relative border-l border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ml-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
           </div>
-        </div>
-      </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">January 2018</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Systems Engineering Student</h3>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Maxime nobis totam ipsam iusto molestiae consectetur, adipisci iure dolores ratione
+            officia! Iure magni sequi alias at expedita sapiente placeat eveniet. Repellat!</p>
+        </li>
+        <li class="mb-10 ml-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October 2018</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Technical support, sales and customer service
+          </h3>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Maxime nobis totam ipsam iusto molestiae consectetur, adipisci iure dolores ratione
+            officia! Iure magni sequi alias at expedita sapiente placeat eveniet. Repellat!</p>
+        </li>
+        <li class="mb-10 ml-4">
+          <div
+            class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+          </div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2021</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Front-end Software Developer <a
+              class="text-teal-400 underline" href="https://akuro.co/" target="blank">@ Akuro</a></h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">In charge of implementing clean and
+            responsive interfaces with readable and semantic code using HTML, CSS, Sass, Jinja2, JavaScript and React.
+          </p>
+        </li>
+      </ol>
     </section>
 
     <!-- Projects -->
-    <section class="w-full px-8 sm:px-0 py-16 bg-slate-500 flex flex-col md:items-center" id="projects">
-      <div class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md">
-        <div class="lg:flex lg:flex-row-reverse lg:justify-between text-slate-100">
-          <h1 class="sm:text-center mb-4 text-slate-50 font-semibold text-5xl leading-[64px]">
-            Projects
-          </h1>
-          <div class="lg:max-w-md">
-            <p class="mb-3">I like to develop small <a
-                class="underline underline-offset-2 decoration-2 decoration-yellow-400"
-                href="https://github.com/abelareiza" target="blank">personal projects</a> in which I put into practice
-              the new things I
-              learn
-              (usually from online courses or books).</p>
-            <p>Some examples:</p>
+    <section class="max-w-screen-lg mx-auto py-24 border-b-2 border-gray-200/20 flex flex-col justify-center">
+      <h3 class="mb-6 text-white font-semibold text-2xl">Some of my work</h3>
+      <div class="flex flex-col gap-y-24">
+
+        <div class="flex items-center relative">
+          <div class="max-w-lg w-1/2">
+            <img src="src/custom/assets/png/meli-screenshot.png" alt="...">
+          </div>
+          <div class="flex flex-col items-end w-7/12 right-0 absolute">
+            <h4 class="mb-2 text-teal-600 text-base font-serif">Featured Project</h4>
+            <h3 class="mb-4 text-white text-xl font-semibold">Mercado Libre UI</h3>
+            <div class="mb-2 p-6 bg-gray-700 shadow-sm">
+              <p class="text-white text-right">
+                It consists mainly of a simplified version of the main page of the famous online sales website <a
+                  class="underline decoration-2 decoration-teal-600" href="https://www.mercadolibre.com/"
+                  target="blank">mercadolibre.com</a>
+              </p>
+            </div>
+            <div class="flex justiyf-end text-gray-200 text-sm font-light gap-x-4">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>TailwindCSS</span>
+              <span>GitHub</span>
+              <span>GitHub Pages</span>
+              <span>Splide JS</span>
+            </div>
           </div>
         </div>
-        <div
-          class="w-full mx-auto max-w-md lg:max-w-screen-md mt-4 md:py-8 md:px-24 lg:px-0 md:bg-slate-900 lg:bg-transparent md:rounded-2xl flex lg:justify-between gap-x-8 lg:gap-x-4 overflow-x-auto lg:overflow-hidden snap-mandatory snap-x lg:snap-none">
-          <figure
-            class="snap-center lg:snap-none shrink-0 lg:shrink w-fit md:w-64 lg:w-48 px-8 py-4 bg-slate-50/20 rounded-2xl">
-            <a href="https://github.com/abelareiza/mercado-libre-ui-clone" target="blank">
-              <img src="src/custom/assets/png/ml-mobile.png" alt="Mockup image">
-              <figcaption class="text-center text-slate-50 text-xs font-light">Mercadolibre UI Clone just using
-                Tailwind
-                CSS</figcaption>
-            </a>
-          </figure>
-          <figure
-            class="snap-center lg:snap-none shrink-0 lg:shrink w-fit md:w-64 lg:w-48 px-8 py-4 bg-slate-50/20 rounded-2xl">
-            <a href="https://github.com/abelareiza/mini-weather" target="blank">
-              <img src="src/custom/assets/png/mini-weather-mobile.png" alt="Mockup image">
-              <figcaption class="text-center text-slate-50 text-xs font-light">Minimalist weather app made with React
-                and
-                consuming the
-                OpenWeather API</figcaption>
-            </a>
-          </figure>
-          <figure
-            class="snap-center lg:snap-none shrink-0 lg:shrink w-fit md:w-64 lg:w-48 px-8 py-4 bg-slate-50/20 rounded-2xl">
-            <a href="https://github.com/abelareiza/playlist-fy" target="blank">
-              <img src="src/custom/assets/png/playlist-fy-mobile.png" alt="Mockup image">
-              <figcaption class="text-center text-slate-50 text-xs font-light">Simple app to create playlists from
-                the
-                browser made with React
-                and consuming the Spotify API</figcaption>
-            </a>
-          </figure>
-          <figure
-            class="snap-center lg:snap-none shrink-0 lg:shrink w-fit md:w-64 lg:w-48 px-8 py-4 bg-slate-50/20 rounded-2xl">
-            <a href="https://github.com/abelareiza/korean-restaurant-menu" target="blank">
-              <img src="src/custom/assets/png/seoul-delights-mobile.png" alt="Mockup image">
-              <figcaption class="text-center text-slate-50 text-xs font-light">Small project created in order to
-                practice
-                and understand CSS
-                Grid and Subgrid</figcaption>
-            </a>
-          </figure>
-        </div>
-      </div>
-      <div
-        class="mt-4 flex justify-center hover:cursor-pointer gap-x-4 hover:gap-x-6 transition-all text-2xl text-slate-100 lg:hidden">
-        <i class="fas fa-long-arrow-alt-left text-yellow-400"></i>
-        <i class="far fa-hand-pointer"></i>
-        <i class="fas fa-long-arrow-alt-right text-yellow-400"></i>
-      </div>
-    </section>
 
-    <!-- Contact -->
-    <section class="w-full px-8 sm:px-0 py-16 bg-slate-700" id="contact">
-      <div
-        class="w-full sm:max-w-md sm:mx-auto lg:max-w-screen-md flex flex-col md:items-center lg:items-start lg:flex-row lg:justify-between">
-        <h1 class="sm:text-center mb-4 text-slate-50 font-semibold text-5xl leading-[64px]">
-          Contact
-        </h1>
-        <div class="md:max-w-md lg:flex lg:flex-col lg:items-end">
-          <p class="text-slate-100 lg:text-right">My <a
-              class="underline underline-offset-2 decoration-2 decoration-yellow-400"
-              href="mailto:abelareiza@gmail.com">inbox</a> is always open, so if you want to say hi, ask for my resume
-            or
-            would like to work with me, you can write to me and I will reply to you as soon as possible.</p>
-          <a href="mailto:abelareiza@gmail.com"
-            class="w-fit hover:bg-yellow-500 hover:pl-6 transition-all mt-8 px-4 py-3 bg-yellow-400 flex items-center justify-between text-slate-800 font-bold">
-            Write email
-            <i class="fas fa-envelope-open ml-4"></i>
-          </a>
+        <div class="flex flex-row-reverse items-center relative">
+          <div class="max-w-lg w-1/2">
+            <img src="src/custom/assets/png/playlistfy-screenshot.png" alt="...">
+          </div>
+          <div class="flex flex-col w-7/12 left-0 absolute">
+            <h4 class="mb-2 text-teal-600 text-base font-serif">Featured Project</h4>
+            <h3 class="mb-4 text-white text-xl font-semibold">Playlist-fy</h3>
+            <div class="mb-2 p-6 bg-gray-700 shadow-sm">
+              <p class="text-white">
+                Playlist-fy is a React App that let you add your favorite music directly to your Spotify library. You
+                can try it at <a class="underline decoration-2 decoration-teal-600" href="https://playlist-fy.surge.sh/"
+                  target="blank">playlist-fy.surge.sh</a>
+              </p>
+            </div>
+            <div class="flex text-gray-200 text-sm font-light gap-x-4">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Spotify API</span>
+              <span>Surge</span>
+            </div>
+          </div>
         </div>
+
+        <div class="flex items-center relative">
+          <div class="max-w-lg w-1/2">
+            <img src="src/custom/assets/png/miniweather-screenshot.png" alt="...">
+          </div>
+          <div class="flex flex-col items-end w-7/12 right-0 absolute">
+            <h4 class="mb-2 text-teal-600 text-base font-serif">Featured Project</h4>
+            <h3 class="mb-4 text-white text-xl font-semibold">mini-weather</h3>
+            <div class="mb-2 p-6 bg-gray-700 shadow-sm">
+              <p class="text-white text-right">
+                mini weather is a React app that allows you to check the weather and temperature anywhere! You
+                can try it at <a class="underline decoration-2 decoration-teal-600"
+                  href="https://mini-weather.surge.sh/" target="blank">mini-weather.surge.sh</a>
+              </p>
+            </div>
+            <div class="flex text-gray-200 text-sm font-light gap-x-4">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>OpenWeather API</span>
+              <span>Surge</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-yellow-400">
+  <footer class="bg-white">
     <div class="w-full sm:max-w-md lg:max-w-screen-md xl:max-w-screen-lg mx-auto px-8 sm:px-0">
       <div class="py-12 flex flex-col md:flex-row md:justify-between gap-8">
         <div class="flex flex-col gap-y-2 text-slate-800">
@@ -378,10 +341,7 @@
       <p class="pb-2 font-light text-sm text-slate-800 text-center">© 2021 - 2022 by Abel Areiza</p>
     </div>
   </footer>
-
   <script src="https://kit.fontawesome.com/e1167abf4c.js" crossorigin="anonymous"></script>
-  <script src="src/custom/js/console-underscore.js"></script>
-  <script src="src/custom/js/burger-button.js"></script>
 </body>
 
 </html>
