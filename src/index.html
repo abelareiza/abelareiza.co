@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abel Areiza</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/e1167abf4c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="relative bg-[#FFF6EB]">
+    <header class="lg: fixed top-8 right-8 md:right-12">
+      <button
+        id="dropdownButton"
+        data-dropdown-toggle="dropdown"
+        class="inline-flex items-center"
+        type="button"
+      >
+        <i class="fa-solid fa-bars text-3xl text-neutral-900"></i>
+      </button>
+
+      <div
+        id="dropdown"
+        class="z-20 hidden w-44 list-none divide-y divide-gray-100 bg-white text-base shadow dark:bg-gray-700"
+      >
+        <ul class="py-1" aria-labelledby="dropdownButton">
+          <li>
+            <a
+              href="#home"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-me"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="px-8 text-neutral-900 md:px-12" id="home">
+        <div
+          class="flex min-h-screen flex-col items-start justify-center md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:flex-row lg:items-center"
+        >
+          <div class="lg:w-1/2 lg:px-12">
+            <h1
+              class="font-playfair text-7xl font-black md:text-9xl lg:text-[144px]"
+            >
+              Abel Areiza
+            </h1>
+          </div>
+
+          <div
+            class="flex max-w-sm flex-col lg:mx-auto lg:w-1/2 lg:items-center"
+          >
+            <div class="mb-8 hidden w-4/5 lg:block">
+              <img
+                src="./assets/jpg/profile-pic.jpg"
+                alt="..."
+                class=""
+                id="clipped-profile"
+              />
+              <svg width="0" height="0">
+                <defs>
+                  <clipPath id="profileClip" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M0.742605 0.13184C0.847965 0.200578 0.966173 0.274736 0.993584 0.373615C1.02078 0.472493 0.956965 0.596308 0.887796 0.716219C0.818841 0.836348 0.744532 0.95279 0.642813 0.987701C0.541093 1.02283 0.412177 0.976642 0.290328 0.925468C0.168265 0.874511 0.0532687 0.81835 0.0153649 0.728362C-0.022539 0.638591 0.0168639 0.514993 0.0560526 0.408743C0.0950272 0.302492 0.133788 0.213588 0.19953 0.137911C0.265487 0.0622349 0.358641 -0.000431439 0.45158 2.23748e-06C0.54452 0.000219076 0.637245 0.063319 0.742605 0.13184Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2
+              class="font-playfair mt-4 mb-6 text-3xl font-black md:text-4xl lg:mt-0"
+            >
+              Front end Developer
+            </h2>
+            <p
+              class="font-merriweather text-lg font-light md:text-xl lg:text-center lg:text-xl"
+            >
+              Web developer with a strong focus on design systems and a passion
+              for UX/UI.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="flex flex-col lg:mx-auto lg:max-w-screen-xl lg:flex-row lg:items-start"
+      >
+        <!-- About me -->
+        <section
+          class="border-t border-neutral-900 px-8 py-16 text-neutral-900 md:px-12 lg:w-1/2 lg:border-none lg:px-12"
+          id="about-me"
+        >
+          <div
+            class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl"
+          >
+            <h2 class="font-playfair mb-8 text-3xl font-black md:text-4xl">
+              About me
+            </h2>
+            <div
+              class="font-merriweather flex flex-col gap-y-2 text-lg font-light md:text-xl"
+            >
+              <p>
+                I'm a front-end software developer and systems engineering
+                student with a passion for web UI design and development.
+              </p>
+              <p>
+                My interest in programming began in 2016, when browsing the
+                internet I came across a free Python course.
+              </p>
+              <p>
+                Currently, and for the last 11 months I have been working as a
+                full-time developer for a local company in which we develop and
+                implement software solutions (mainly web projects) for clients
+                from various countries.
+              </p>
+              <p>
+                Some of my favorite hobbies involve reading, listening to music,
+                playing video games and cycling.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section
+          class="border-t border-neutral-900 px-8 py-16 text-neutral-900 md:px-12 lg:w-1/2 lg:border-none lg:px-12"
+          id="skills"
+        >
+          <div
+            class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl"
+          >
+            <h2 class="font-playfair mb-8 text-3xl font-black md:text-4xl">
+              My skills
+            </h2>
+            <div class="mb-12 flex w-full flex-col">
+              <h3 class="font-playfair mb-8 text-2xl font-black">Code</h3>
+              <hr class="w-full border-b-2 border-neutral-900" />
+              <div>
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Sass/Scss
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Advanced
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Tailwind CSS
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Advanced
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    JavaScript
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Intermediate
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Vue
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Beginner
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Nuxt
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Beginner
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Python
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Intermediate
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Flask
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Beginner
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+              </div>
+            </div>
+
+            <div class="mb-12 flex w-full flex-col">
+              <h3 class="font-playfair mb-8 text-2xl font-black">Design</h3>
+              <hr class="w-full border-b-2 border-neutral-900" />
+              <div>
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Adobe Illustrator
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Beginner
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Adobe Xd
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Intermediate
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p
+                    class="font-merriweather m-0 text-base font-medium md:text-lg"
+                  >
+                    Figma
+                  </p>
+                  <p
+                    class="font-merriweather m-0 text-sm font-light md:text-base"
+                  >
+                    Intermediate
+                  </p>
+                </div>
+                <hr class="w-full border-b border-neutral-900" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Featured projects -->
+      <section
+        class="border-t border-neutral-900 px-8 py-16 text-neutral-900 lg:border-none lg:px-0"
+        id="projects"
+      >
+        <div
+          class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:items-center"
+        >
+          <h2
+            class="font-playfair mb-12 text-3xl font-black md:mb-16 md:text-4xl"
+          >
+            Featured projects
+          </h2>
+          <div
+            class="flex flex-col gap-y-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:px-12"
+          >
+            <div class="flex flex-col">
+              <a href="https://playlist-fy.surge.sh" target="blank">
+                <figure class="w-full overflow-hidden">
+                  <img
+                    src="./assets/png/playlistfy_desktop.png"
+                    alt="..."
+                    class="transition-all hover:scale-110"
+                  />
+                </figure>
+              </a>
+              <div>
+                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
+                  Playlist-fy
+                </h3>
+                <div
+                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
+                >
+                  <p>
+                    React App that allows you to create custom playlists and
+                    save them directly to your Spotify library.
+                  </p>
+                  <a
+                    href="https://github.com/abelareiza/playlist-fy"
+                    target="blank"
+                    class="text-sm underline md:text-base"
+                  >
+                    View project
+                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <a
+                href="https://abelareiza.github.io/mercado-libre-ui-clone/"
+                target="blank"
+              >
+                <figure class="w-full overflow-hidden">
+                  <img
+                    src="./assets/png/mercadolibre_mobile.png"
+                    alt="..."
+                    class="transition-all hover:scale-110"
+                  />
+                </figure>
+              </a>
+              <div>
+                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
+                  Mercado Libre UI
+                </h3>
+                <div
+                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
+                >
+                  <p>
+                    It consists mainly of a simplified version of the homepage
+                    of mercadolibre.com fully made with Tailwind CSS.
+                  </p>
+                  <a
+                    href="https://github.com/abelareiza/mercado-libre-ui-clone"
+                    target="blank"
+                    class="text-sm underline md:text-base"
+                  >
+                    View project
+                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <a
+                href="https://abelareiza.github.io/korean-restaurant-menu/"
+                target="blank"
+              >
+                <figure class="w-full overflow-hidden">
+                  <img
+                    src="./assets/png/korean_menu_mobile.png"
+                    alt="..."
+                    class="transition-all hover:scale-110"
+                  />
+                </figure>
+              </a>
+              <div>
+                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
+                  Korean Restaurant Menu
+                </h3>
+                <div
+                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
+                >
+                  <p>
+                    This small project consists of a Korean restaurant menu
+                    using only CSS Grid and Subgrid for the layout.
+                  </p>
+                  <a
+                    href="https://github.com/abelareiza/korean-restaurant-menu"
+                    target="blank"
+                    class="text-sm underline md:text-base"
+                  >
+                    View project
+                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <a href="https://instagram-abel.surge.sh/" target="blank">
+                <figure class="w-full overflow-hidden">
+                  <img
+                    src="./assets/png/instagram.png"
+                    alt="..."
+                    class="transition-all hover:scale-110"
+                  />
+                </figure>
+              </a>
+              <div>
+                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
+                  Instagram UI
+                </h3>
+                <div
+                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
+                >
+                  <p>
+                    It consists mainly of a simplified version of the mobile app
+                    Instagram fully made with Tailwind CSS.
+                  </p>
+                  <a
+                    href="https://github.com/abelareiza/instagram-ui-clone"
+                    target="blank"
+                    class="text-sm underline md:text-base"
+                  >
+                    View project
+                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        class="border-t border-neutral-900 px-8 py-16 text-neutral-900 lg:px-0"
+        id="contact"
+      >
+        <div
+          class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:px-12"
+        >
+          <h2 class="font-playfair mb-8 text-3xl font-black md:text-4xl">
+            Contact
+          </h2>
+          <div
+            class="font-merriweather mb-6 flex flex-col gap-y-2 text-base font-light md:text-lg lg:text-xl"
+          >
+            <p>
+              Whether you're looking for someone to code your page, would like
+              to see my CV, or just want to say hi, feel free to contact me.
+            </p>
+            <p>Let's do cool things together!</p>
+          </div>
+          <a href="mailto:abelareiza@gmail.com?subject=Mail from abelareiza.co">
+            <button
+              class="font-merriweather rounded border border-neutral-900 px-8 py-2 text-base font-medium transition-shadow hover:bg-orange-100 hover:shadow-md md:py-3 md:text-lg lg:py-4 lg:text-xl"
+            >
+              Email
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-900 px-8 text-neutral-900 lg:px-0">
+      <div class="">
+        <div
+          class="flex flex-col md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:px-12"
+        >
+          <div class="flex items-end justify-between pt-12 pb-8">
+            <div>
+              <h3 class="font-merriweather text-lg font-light md:text-xl">
+                Find me on:
+              </h3>
+              <div class="mt-4 flex items-center gap-x-4">
+                <a href="https://github.com/abelareiza" target="blank">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/abelareiza/" target="blank">
+                  <i class="fa-brands fa-instagram text-2xl"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/abelareiza/"
+                  target="blank"
+                >
+                  <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="https://twitter.com/Enjuavel" target="blank">
+                  <i class="fa-brands fa-twitter text-2xl"></i>
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <i class="fa-solid fa-sun text-2xl"></i>
+              <div
+                class="relative h-6 w-12 cursor-pointer rounded-xl border border-neutral-900"
+                id="darkModeSwitch"
+              >
+                <div
+                  class="absolute left-[1px] top-[1px] h-5 w-5 rounded-full bg-neutral-900"
+                ></div>
+              </div>
+              <i class="fa-solid fa-moon text-2xl"></i>
+            </div>
+          </div>
+          <span class="font-playfair self-center py-4 text-sm md:text-base"
+            >© 2021-2022 - Abel Areiza
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../node_modules/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
+  </body>
+</html>
