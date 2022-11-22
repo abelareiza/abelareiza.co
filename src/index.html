@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="DOM" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,16 +17,36 @@
     ></script>
   </head>
 
-  <body class="relative bg-[#FFF6EB]">
-    <header class="lg: fixed top-8 right-8 md:right-12">
+  <body class="relative bg-[#FFF6EB] dark:bg-gray-800">
+    <header class="fixed top-8 right-8 sm:relative sm:top-0 sm:right-0">
       <button
         id="dropdownButton"
         data-dropdown-toggle="dropdown"
-        class="inline-flex items-center"
+        class="inline-flex items-center sm:hidden"
         type="button"
       >
-        <i class="fa-solid fa-bars text-3xl text-neutral-900"></i>
+        <i
+          class="fa-solid fa-bars text-3xl text-neutral-900 dark:text-orange-50"
+        ></i>
       </button>
+
+      <nav class="hidden text-neutral-900 dark:text-orange-50 sm:block">
+        <ul class="flex justify-end px-6 py-4">
+          <li><a href="#home" class="font-satoshi px-4 font-bold">Home</a></li>
+          <li>
+            <a href="#about-me" class="font-satoshi px-4 font-bold">About me</a>
+          </li>
+          <li>
+            <a href="#skills" class="font-satoshi px-4 font-bold">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="font-satoshi px-4 font-bold">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="font-satoshi px-4 font-bold">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
       <div
         id="dropdown"
@@ -72,15 +92,15 @@
       </div>
     </header>
 
-    <main>
+    <main class="text-neutral-900 dark:text-orange-50">
       <!-- Hero -->
-      <section class="px-8 text-neutral-900 md:px-12" id="home">
+      <section class="px-8 md:px-12" id="home">
         <div
           class="flex min-h-screen flex-col items-start justify-center md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:flex-row lg:items-center"
         >
           <div class="lg:w-1/2 lg:px-12">
             <h1
-              class="font-playfair text-7xl font-black md:text-9xl lg:text-[144px]"
+              class="font-playfair mb-8 text-7xl font-black md:text-9xl lg:mb-0 lg:text-[144px]"
             >
               Abel Areiza
             </h1>
@@ -91,9 +111,9 @@
           >
             <div class="mb-8 hidden w-4/5 lg:block">
               <img
-                src="./assets/jpg/profile-pic.jpg"
+                src="./assets/png/abel-02.png"
                 alt="..."
-                class=""
+                class="bg-neutral-900 dark:bg-orange-50"
                 id="clipped-profile"
               />
               <svg width="0" height="0">
@@ -107,12 +127,17 @@
               </svg>
             </div>
             <h2
-              class="font-playfair mt-4 mb-6 text-3xl font-black md:text-4xl lg:mt-0"
+              class="font-playfair mb-2 text-3xl font-black sm:mb-4 md:text-4xl"
             >
-              Front end Developer
+              Frontend Developer
+            </h2>
+            <h2
+              class="font-playfair mb-2 text-3xl font-black sm:mb-4 md:text-4xl"
+            >
+              Web Designer
             </h2>
             <p
-              class="font-merriweather text-lg font-light md:text-xl lg:text-center lg:text-xl"
+              class="font-satoshi text-lg font-light md:text-xl lg:text-center lg:text-2xl"
             >
               Web developer with a strong focus on design systems and a passion
               for UX/UI.
@@ -126,35 +151,40 @@
       >
         <!-- About me -->
         <section
-          class="border-t border-neutral-900 px-8 py-16 text-neutral-900 md:px-12 lg:w-1/2 lg:border-none lg:px-12"
+          class="border-t border-neutral-900 px-8 py-16 dark:border-orange-50 md:px-12 lg:w-1/2 lg:border-none lg:px-12"
           id="about-me"
         >
           <div
             class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl"
           >
-            <h2 class="font-playfair mb-8 text-3xl font-black md:text-4xl">
+            <h2 class="font-playfair mb-5 text-3xl font-black md:text-4xl">
               About me
             </h2>
             <div
-              class="font-merriweather flex flex-col gap-y-2 text-lg font-light md:text-xl"
+              class="font-satoshi flex flex-col gap-y-4 text-lg font-light md:text-xl"
             >
+              <p>Hey, there!</p>
               <p>
-                I'm a front-end software developer and systems engineering
-                student with a passion for web UI design and development.
+                I'm a frontend developer and web designer with a passion for web
+                development. I’m currently studying systems engineering, and
+                sometimes I like to freelance projects depending on the idea,
+                time and budget.
               </p>
               <p>
                 My interest in programming began in 2016, when browsing the
                 internet I came across a free Python course.
               </p>
               <p>
-                Currently, and for the last 11 months I have been working as a
-                full-time developer for a local company in which we develop and
-                implement software solutions (mainly web projects) for clients
-                from various countries.
+                Currently, and for the last almost two years I have been working
+                as a full-time developer for a local company in which we develop
+                and implement software solutions (mainly web projects) for
+                clients from various countries.
               </p>
               <p>
-                Some of my favorite hobbies involve reading, listening to music,
-                playing video games and cycling.
+                Some of my favorite hobbies involve reading about stoicism,
+                being aware of new technologies and web development trends,
+                developing small personal projects as practice and cycling on
+                weekends.
               </p>
             </div>
           </div>
@@ -162,156 +192,117 @@
 
         <!-- Skills -->
         <section
-          class="border-t border-neutral-900 px-8 py-16 text-neutral-900 md:px-12 lg:w-1/2 lg:border-none lg:px-12"
+          class="border-t border-neutral-900 px-8 py-16 dark:border-orange-50 md:px-12 lg:w-1/2 lg:border-none lg:px-12"
           id="skills"
         >
           <div
             class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl"
           >
-            <h2 class="font-playfair mb-8 text-3xl font-black md:text-4xl">
+            <h2 class="font-playfair mb-5 text-3xl font-black md:text-4xl">
               My skills
             </h2>
             <div class="mb-12 flex w-full flex-col">
-              <h3 class="font-playfair mb-8 text-2xl font-black">Code</h3>
-              <hr class="w-full border-b-2 border-neutral-900" />
+              <h3 class="font-playfair mb-5 text-2xl font-black">Code</h3>
+              <hr
+                class="w-full border-b border-neutral-900 dark:border-orange-50"
+              />
               <div>
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Sass/Scss
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Advanced
-                  </p>
+                  <p class="font-satoshi m-0 text-base">Sass/Scss</p>
+                  <p class="font-satoshi m-0 text-sm font-light">Advanced</p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Tailwind CSS
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Advanced
-                  </p>
+                  <p class="font-satoshi m-0 text-base">TailwindCSS</p>
+                  <p class="font-satoshi m-0 text-sm font-light">Advanced</p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    JavaScript
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
+                  <p class="font-satoshi m-0 text-base">JavaScript</p>
+                  <p class="font-satoshi m-0 text-sm font-light">
                     Intermediate
                   </p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Vue
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Beginner
-                  </p>
-                </div>
-                <hr class="w-full border-b border-neutral-900" />
-                <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Nuxt
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Beginner
-                  </p>
-                </div>
-                <hr class="w-full border-b border-neutral-900" />
-                <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Python
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
+                  <p class="font-satoshi m-0 text-base">React</p>
+                  <p class="font-satoshi m-0 text-sm font-light">
                     Intermediate
                   </p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Flask
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Beginner
+                  <p class="font-satoshi m-0 text-base">Vue.js</p>
+                  <p class="font-satoshi m-0 text-sm font-light">
+                    Intermediate
                   </p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p class="font-satoshi m-0 text-base">Nuxt.js</p>
+                  <p class="font-satoshi m-0 text-sm font-light">Advanced</p>
+                </div>
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p class="font-satoshi m-0 text-base">Python</p>
+                  <p class="font-satoshi m-0 text-sm font-light">
+                    Intermediate
+                  </p>
+                </div>
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p class="font-satoshi text- m-0">Flutter</p>
+                  <p class="font-satoshi m-0 text-sm font-light">Beginner</p>
+                </div>
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
               </div>
             </div>
 
             <div class="mb-12 flex w-full flex-col">
-              <h3 class="font-playfair mb-8 text-2xl font-black">Design</h3>
-              <hr class="w-full border-b-2 border-neutral-900" />
+              <h3 class="font-playfair mb-5 text-2xl font-black">Design</h3>
+              <hr
+                class="w-full border-b border-neutral-900 dark:border-orange-50"
+              />
               <div>
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Adobe Illustrator
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Beginner
-                  </p>
+                  <p class="font-satoshi text- m-0">Figma</p>
+                  <p class="font-satoshi m-0 text-sm font-light">Advanced</p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
                 <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Adobe Xd
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
+                  <p class="font-satoshi text- m-0">Adobe Xd</p>
+                  <p class="font-satoshi m-0 text-sm font-light">Beginner</p>
+                </div>
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
+                <div class="flex w-full items-end justify-between pb-2 pt-3">
+                  <p class="font-satoshi text- m-0">Adobe Illustrator</p>
+                  <p class="font-satoshi m-0 text-sm font-light">
                     Intermediate
                   </p>
                 </div>
-                <hr class="w-full border-b border-neutral-900" />
-                <div class="flex w-full items-end justify-between pb-2 pt-3">
-                  <p
-                    class="font-merriweather m-0 text-base font-medium md:text-lg"
-                  >
-                    Figma
-                  </p>
-                  <p
-                    class="font-merriweather m-0 text-sm font-light md:text-base"
-                  >
-                    Intermediate
-                  </p>
-                </div>
-                <hr class="w-full border-b border-neutral-900" />
+                <hr
+                  class="w-full border-b border-neutral-900 dark:border-orange-50"
+                />
               </div>
             </div>
           </div>
@@ -320,20 +311,54 @@
 
       <!-- Featured projects -->
       <section
-        class="border-t border-neutral-900 px-8 py-16 text-neutral-900 lg:border-none lg:px-0"
+        class="border-t border-neutral-900 px-8 py-16 dark:border-orange-50 lg:border-none lg:px-0"
         id="projects"
       >
         <div
           class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:items-center"
         >
-          <h2
-            class="font-playfair mb-12 text-3xl font-black md:mb-16 md:text-4xl"
-          >
+          <h2 class="font-playfair mb-12 text-3xl font-black md:text-4xl">
             Featured projects
           </h2>
           <div
             class="flex flex-col gap-y-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:px-12"
           >
+            <!-- Pidgin project -->
+            <div class="flex flex-col">
+              <a href="https://pidgin.com.co" target="blank">
+                <figure class="w-full overflow-hidden">
+                  <img
+                    src="./assets/png/pidgin.png"
+                    alt="..."
+                    class="transition-all hover:scale-110"
+                  />
+                </figure>
+              </a>
+              <div>
+                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
+                  Pidgin
+                </h3>
+                <div
+                  class="font-satoshi flex flex-col gap-y-2 text-lg font-light"
+                >
+                  <p>
+                    Scalable website with support for multiple languages build
+                    for an on-demand software developer firm at the forefront of
+                    recruitment.
+                  </p>
+                  <a
+                    href="https://pidgin.com.co"
+                    target="blank"
+                    class="text-sm underline md:text-base"
+                  >
+                    View project
+                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Playlist-fy project -->
             <div class="flex flex-col">
               <a href="https://playlist-fy.surge.sh" target="blank">
                 <figure class="w-full overflow-hidden">
@@ -349,7 +374,7 @@
                   Playlist-fy
                 </h3>
                 <div
-                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
+                  class="font-satoshi flex flex-col gap-y-2 text-lg font-light"
                 >
                   <p>
                     React App that allows you to create custom playlists and
@@ -367,78 +392,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col">
-              <a
-                href="https://abelareiza.github.io/mercado-libre-ui-clone/"
-                target="blank"
-              >
-                <figure class="w-full overflow-hidden">
-                  <img
-                    src="./assets/png/mercadolibre_mobile.png"
-                    alt="..."
-                    class="transition-all hover:scale-110"
-                  />
-                </figure>
-              </a>
-              <div>
-                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
-                  Mercado Libre UI
-                </h3>
-                <div
-                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
-                >
-                  <p>
-                    It consists mainly of a simplified version of the homepage
-                    of mercadolibre.com fully made with Tailwind CSS.
-                  </p>
-                  <a
-                    href="https://github.com/abelareiza/mercado-libre-ui-clone"
-                    target="blank"
-                    class="text-sm underline md:text-base"
-                  >
-                    View project
-                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex flex-col">
-              <a
-                href="https://abelareiza.github.io/korean-restaurant-menu/"
-                target="blank"
-              >
-                <figure class="w-full overflow-hidden">
-                  <img
-                    src="./assets/png/korean_menu_mobile.png"
-                    alt="..."
-                    class="transition-all hover:scale-110"
-                  />
-                </figure>
-              </a>
-              <div>
-                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
-                  Korean Restaurant Menu
-                </h3>
-                <div
-                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
-                >
-                  <p>
-                    This small project consists of a Korean restaurant menu
-                    using only CSS Grid and Subgrid for the layout.
-                  </p>
-                  <a
-                    href="https://github.com/abelareiza/korean-restaurant-menu"
-                    target="blank"
-                    class="text-sm underline md:text-base"
-                  >
-                    View project
-                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            <!-- Instagram UI project -->
             <div class="flex flex-col">
               <a href="https://instagram-abel.surge.sh/" target="blank">
                 <figure class="w-full overflow-hidden">
@@ -454,14 +408,51 @@
                   Instagram UI
                 </h3>
                 <div
-                  class="font-merriweather flex flex-col gap-y-2 text-base font-light md:text-lg"
+                  class="font-satoshi flex flex-col gap-y-2 text-lg font-light"
                 >
                   <p>
                     It consists mainly of a simplified version of the mobile app
-                    Instagram fully made with Tailwind CSS.
+                    Instagram fully made with TailwindCSS.
                   </p>
                   <a
                     href="https://github.com/abelareiza/instagram-ui-clone"
+                    target="blank"
+                    class="text-sm underline md:text-base"
+                  >
+                    View project
+                    <i class="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mercado Libre UI project -->
+            <div class="flex flex-col">
+              <a
+                href="https://github.com/abelareiza/mercado-libre-ui-clone"
+                target="blank"
+              >
+                <figure class="w-full overflow-hidden">
+                  <img
+                    src="./assets/png/mercadolibre_mobile.png"
+                    alt="..."
+                    class="transition-all hover:scale-110"
+                  />
+                </figure>
+              </a>
+              <div>
+                <h3 class="font-playfair my-4 text-xl font-bold md:text-2xl">
+                  Mercado Libre UI
+                </h3>
+                <div
+                  class="font-satoshi flex flex-col gap-y-2 text-lg font-light"
+                >
+                  <p>
+                    It consists mainly of a simplified version of the homepage
+                    of mercadolibre.com fully made with TailwindCSS.
+                  </p>
+                  <a
+                    href="https://github.com/abelareiza/mercado-libre-ui-clone"
                     target="blank"
                     class="text-sm underline md:text-base"
                   >
@@ -477,29 +468,33 @@
 
       <!-- Contact -->
       <section
-        class="border-t border-neutral-900 px-8 py-16 text-neutral-900 lg:px-0"
+        class="border-t border-neutral-900 px-8 py-16 dark:border-orange-50 lg:px-0"
         id="contact"
       >
         <div
           class="flex flex-col items-start md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:px-12"
         >
-          <h2 class="font-playfair mb-8 text-3xl font-black md:text-4xl">
+          <h2 class="font-playfair mb-6 text-3xl font-black md:text-4xl">
             Contact
           </h2>
           <div
-            class="font-merriweather mb-6 flex flex-col gap-y-2 text-base font-light md:text-lg lg:text-xl"
+            class="font-satoshi mb-6 flex flex-col gap-y-4 text-base font-light md:text-2xl"
           >
             <p>
               Whether you're looking for someone to code your page, would like
               to see my CV, or just want to say hi, feel free to contact me.
             </p>
-            <p>Let's do cool things together!</p>
+            <p>Let's do cool things together.</p>
           </div>
           <a href="mailto:abelareiza@gmail.com?subject=Mail from abelareiza.co">
             <button
-              class="font-merriweather rounded border border-neutral-900 px-8 py-2 text-base font-medium transition-shadow hover:bg-orange-100 hover:shadow-md md:py-3 md:text-lg lg:py-4 lg:text-xl"
+              class="group font-satoshi rounded border border-neutral-900 px-6 py-3 text-xl font-medium transition-colors hover:border-orange-500 hover:bg-orange-200 dark:border-orange-50 hover:dark:bg-gray-800"
             >
-              Email
+              <span
+                class="group-hover:animate-wiggle mr-2 inline-block origin-bottom transition-transform"
+                >👋</span
+              >
+              <span>Say Hi!</span>
             </button>
           </a>
         </div>
@@ -507,14 +502,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-neutral-900 px-8 text-neutral-900 lg:px-0">
-      <div class="">
+    <footer
+      class="border-t border-neutral-900 px-8 dark:border-orange-50 lg:px-0"
+    >
+      <div class="text-neutral-900 dark:text-orange-50">
         <div
           class="flex flex-col md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:px-12"
         >
           <div class="flex items-end justify-between pt-12 pb-8">
             <div>
-              <h3 class="font-merriweather text-lg font-light md:text-xl">
+              <h3 class="font-satoshi text-lg font-light md:text-xl">
                 Find me on:
               </h3>
               <div class="mt-4 flex items-center gap-x-4">
@@ -530,31 +527,41 @@
                 >
                   <i class="fa-brands fa-linkedin-in text-2xl"></i>
                 </a>
-                <a href="https://twitter.com/Enjuavel" target="blank">
+                <a href="https://twitter.com/abelareiza" target="blank">
                   <i class="fa-brands fa-twitter text-2xl"></i>
                 </a>
               </div>
             </div>
             <div class="flex items-center gap-x-2">
-              <i class="fa-solid fa-sun text-2xl"></i>
+              <i class="fa-solid fa-sun text-2xl dark:text-sky-500"></i>
               <div
-                class="relative h-6 w-12 cursor-pointer rounded-xl border border-neutral-900"
-                id="darkModeSwitch"
+                class="group relative h-6 w-12 cursor-pointer rounded-xl border border-neutral-900 dark:border-blue-600"
+                onclick="switchTheme()"
               >
                 <div
-                  class="absolute left-[1px] top-[1px] h-5 w-5 rounded-full bg-neutral-900"
+                  id="themeToggler"
+                  class="absolute left-[1px] top-[1px] h-5 w-5 rounded-full bg-neutral-900 from-sky-500 to-indigo-500 transition-all dark:bg-gradient-to-r"
                 ></div>
               </div>
-              <i class="fa-solid fa-moon text-2xl"></i>
+              <i class="fa-solid fa-moon text-2xl dark:text-indigo-500"></i>
             </div>
           </div>
-          <span class="font-playfair self-center py-4 text-sm md:text-base"
-            >© 2021-2022 - Abel Areiza
+          <span class="font-satoshi self-center py-3 text-sm">
+            Abel Areiza © 2022
           </span>
         </div>
       </div>
     </footer>
 
     <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+    <script>
+      function switchTheme() {
+        let theme = document.getElementById("DOM");
+        let toggler = document.getElementById("themeToggler");
+
+        theme.classList.toggle("dark");
+        toggler.classList.toggle("left-[25px]");
+      }
+    </script>
   </body>
 </html>
