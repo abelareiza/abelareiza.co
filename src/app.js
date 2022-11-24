@@ -10,11 +10,3 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".custom-hidden");
 hiddenElements.forEach((e) => observer.observe(e));
-
-function switchTheme() {
-  let theme = document.getElementById("DOM");
-  let toggler = document.getElementById("themeToggler");
-
-  theme.classList.toggle("dark");
-  toggler.classList.toggle("left-[25px]");
-}
