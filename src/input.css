@@ -21,3 +21,30 @@ html {
 #clipped-profile {
   clip-path: url(#profileClip);
 }
+
+.custom-hidden {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateX(-100%);
+  transition: all 0.8s;
+}
+
+.custom-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.project:nth-child(odd) {
+  transition-delay: 100ms;
+}
+
+.project:nth-child(even) {
+  transition-delay: 400ms;
+}
+
+@media (prefers-reduced-motion) {
+  .custom-hidden {
+    transition: none;
+  }
+}

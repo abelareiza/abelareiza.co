@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel Areiza</title>
     <link rel="stylesheet" href="./css/output.css" />
+    <script defer src="app.js"></script>
     <link
       rel="shortcut icon"
       href="./assets/png/favicon.png"
@@ -18,7 +19,7 @@
   </head>
 
   <body class="relative bg-[#FFF6EB] dark:bg-gray-800">
-    <header class="fixed top-8 right-8 sm:relative sm:top-0 sm:right-0">
+    <header class="fixed top-8 right-8 z-10 sm:relative sm:top-0 sm:right-0">
       <button
         id="dropdownButton"
         data-dropdown-toggle="dropdown"
@@ -94,13 +95,13 @@
 
     <main class="text-neutral-900 dark:text-orange-50">
       <!-- Hero -->
-      <section class="px-8 md:px-12" id="home">
+      <section class="custom-hidden mb-8 px-8 sm:-mt-[56px] md:px-12" id="home">
         <div
           class="flex min-h-screen flex-col items-start justify-center md:mx-auto md:max-w-lg lg:max-w-screen-xl lg:flex-row lg:items-center"
         >
           <div class="lg:w-1/2 lg:px-12">
             <h1
-              class="font-playfair mb-8 text-7xl font-black md:text-9xl lg:mb-0 lg:text-[144px]"
+              class="font-playfair mb-8 text-7xl font-black md:text-9xl lg:text-[144px]"
             >
               Abel Areiza
             </h1>
@@ -147,7 +148,7 @@
       </section>
 
       <div
-        class="flex flex-col lg:mx-auto lg:max-w-screen-xl lg:flex-row lg:items-start"
+        class="custom-hidden mb-8 flex flex-col lg:mx-auto lg:max-w-screen-xl lg:flex-row lg:items-start"
       >
         <!-- About me -->
         <section
@@ -311,7 +312,7 @@
 
       <!-- Featured projects -->
       <section
-        class="border-t border-neutral-900 px-8 py-16 dark:border-orange-50 lg:border-none lg:px-0"
+        class="mb-8 border-t border-neutral-900 px-8 py-16 dark:border-orange-50 lg:border-none lg:px-0"
         id="projects"
       >
         <div
@@ -324,7 +325,7 @@
             class="flex flex-col gap-y-12 lg:grid lg:grid-cols-2 lg:gap-8 lg:px-12"
           >
             <!-- Pidgin project -->
-            <div class="flex flex-col">
+            <div class="project custom-hidden flex flex-col">
               <a href="https://pidgin.com.co" target="blank">
                 <figure class="w-full overflow-hidden">
                   <img
@@ -342,7 +343,7 @@
                   class="font-satoshi flex flex-col gap-y-2 text-lg font-light"
                 >
                   <p>
-                    Scalable website with support for multiple languages build
+                    Scalable website with support for multiple languages, build
                     for an on-demand software developer firm at the forefront of
                     recruitment.
                   </p>
@@ -359,7 +360,7 @@
             </div>
 
             <!-- Playlist-fy project -->
-            <div class="flex flex-col">
+            <div class="project custom-hidden flex flex-col">
               <a href="https://playlist-fy.surge.sh" target="blank">
                 <figure class="w-full overflow-hidden">
                   <img
@@ -393,7 +394,7 @@
             </div>
 
             <!-- Instagram UI project -->
-            <div class="flex flex-col">
+            <div class="project custom-hidden flex flex-col">
               <a href="https://instagram-abel.surge.sh/" target="blank">
                 <figure class="w-full overflow-hidden">
                   <img
@@ -427,7 +428,7 @@
             </div>
 
             <!-- Mercado Libre UI project -->
-            <div class="flex flex-col">
+            <div class="project custom-hidden flex flex-col">
               <a
                 href="https://github.com/abelareiza/mercado-libre-ui-clone"
                 target="blank"
@@ -468,7 +469,7 @@
 
       <!-- Contact -->
       <section
-        class="border-t border-neutral-900 px-8 py-16 dark:border-orange-50 lg:px-0"
+        class="custom-hidden border-t border-neutral-900 px-8 py-16 dark:border-orange-50 lg:px-0"
         id="contact"
       >
         <div
@@ -554,14 +555,5 @@
     </footer>
 
     <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
-    <script>
-      function switchTheme() {
-        let theme = document.getElementById("DOM");
-        let toggler = document.getElementById("themeToggler");
-
-        theme.classList.toggle("dark");
-        toggler.classList.toggle("left-[25px]");
-      }
-    </script>
   </body>
 </html>
