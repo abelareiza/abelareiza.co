@@ -3,6 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    "prettier-plugin-tailwindcss"
+    "prettier-plugin-tailwindcss",
+    "flowbite"
   ],
 })
