@@ -17,7 +17,7 @@
         ><span class="font-semibold">Areiza</span>
       </div>
       <nav class="flex items-center">
-        <ul class="flex space-x-12 font-light uppercase">
+        <ul class="flex space-x-4 font-light uppercase xl:space-x-12">
           <li class="lorem"><a href="/">Projects</a></li>
           <li class="lorem"><a href="/">About</a></li>
           <li class="lorem"><a href="/">Contact</a></li>
@@ -25,10 +25,10 @@
       </nav>
     </header>
 
-    <main class="grid grid-cols-12 grid-rows-2 gap-5">
+    <main class="grid gap-5 xl:grid-rows-2">
       <!-- title -->
       <div
-        class="col-span-5 col-start-1 row-span-1 row-start-1 flex flex-col justify-end rounded-[20px] bg-indigo-100 p-6 pb-20"
+        class="col-span-12 col-start-1 row-span-1 row-start-1 flex h-fit flex-col justify-end rounded-[20px] bg-indigo-100 px-6 py-12 xl:col-span-5 xl:p-6 xl:pb-20"
       >
         <h1 class="text-5xl">
           Artist Redefining
@@ -39,7 +39,7 @@
 
       <!-- photo -->
       <div
-        class="col-span-3 col-start-6 row-span-1 row-start-1 overflow-hidden rounded-[20px]"
+        class="col-span-12 row-span-1 h-fit overflow-hidden rounded-[20px] xl:col-span-3 xl:col-start-6 xl:row-start-1"
       >
         <img
           src="/assets/betty.jpg"
@@ -50,7 +50,7 @@
 
       <!-- bio -->
       <div
-        class="col-span-4 col-start-1 row-span-1 row-start-2 flex flex-col justify-end rounded-[20px] bg-indigo-100 p-6 pr-20"
+        class="col-span-12 col-start-1 row-span-1 flex flex-col justify-end rounded-[20px] bg-indigo-100 px-6 py-12 xl:col-span-4 xl:row-span-1 xl:row-start-2 xl:p-6 xl:pr-20"
       >
         <p class="text-xl font-light">
           Julia Huang is an innovative AI artist, renowned for blending
@@ -61,7 +61,7 @@
 
       <!-- contact -->
       <div
-        class="col-span-4 col-start-5 row-span-1 row-start-2 flex flex-col justify-between rounded-[20px] bg-indigo-200 px-6 py-8"
+        class="col-span-12 row-span-1 flex flex-col justify-between gap-y-8 rounded-[20px] bg-indigo-200 px-6 py-12 xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:py-8"
       >
         <a href="/" class="flex w-full items-center justify-between">
           <p class="w-24 text-sm font-light">Have some questions?</p>
@@ -75,11 +75,11 @@
       </div>
 
       <div
-        class="col-span-4 col-start-9 row-span-2 row-start-1 flex flex-col gap-5"
+        class="col-span-12 row-span-1 flex flex-col gap-5 xl:col-span-4 xl:col-start-9 xl:row-span-2 xl:row-start-1"
       >
         <!-- projects -->
         <div
-          class="flex h-fit flex-col rounded-[20px] bg-indigo-100 px-6 pt-8 pb-2"
+          class="flex h-fit flex-col rounded-[20px] bg-indigo-100 px-6 pt-12 pb-4 xl:pt-8 xl:pb-2"
           id="accordion-flush"
           data-accordion="collapse"
           data-active-classes="pb-5 border-transparent"
@@ -246,15 +246,23 @@
           </div>
         </div>
 
-        <!-- contacts -->
+        <!-- social -->
         <div
           class="flex h-full items-center justify-evenly rounded-[20px] bg-indigo-100"
         >
-          <a href="/" class="flex py-10 text-sm font-light uppercase"
+          <a
+            href="/"
+            class="flex w-full justify-center px-4 py-12 text-sm font-light uppercase xl:py-10"
             >Instagram</a
           >
-          <a href="/" class="flex py-10 text-sm font-light uppercase">X</a>
-          <a href="/" class="flex py-10 text-sm font-light uppercase"
+          <a
+            href="/"
+            class="flex w-full justify-center px-4 py-12 text-sm font-light uppercase xl:py-10"
+            >X</a
+          >
+          <a
+            href="/"
+            class="flex w-full justify-center px-4 py-12 text-sm font-light uppercase xl:py-10"
             >LinkedIn</a
           >
         </div>
