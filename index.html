@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
 
-  <body class="p-5">
+  <body class="bg-stone-200 p-5">
     <header
-      class="mb-5 flex justify-between rounded-[20px] bg-indigo-100 px-6 py-10"
+      class="mb-5 flex justify-between rounded-[20px] bg-teal-700 px-6 py-10 text-stone-100"
     >
       <div class="text-2xl">
         <span class="font-light italic">Abel </span
@@ -28,12 +28,14 @@
     <main class="grid grid-cols-12 gap-5 xl:grid-rows-2">
       <!-- title -->
       <div
-        class="col-span-12 col-start-1 row-span-1 row-start-1 flex h-fit flex-col justify-end rounded-[20px] bg-indigo-100 px-6 py-12 md:col-span-6 xl:col-span-5 xl:h-auto xl:p-6 xl:pb-20"
+        class="col-span-12 col-start-1 row-span-1 row-start-1 flex h-fit flex-col justify-end rounded-[20px] bg-teal-700 px-6 py-12 text-stone-100 md:col-span-6 xl:col-span-5 xl:h-auto xl:p-6 xl:pb-20"
       >
         <h1 class="text-5xl">
-          Artist Redefining
-          <span class="font-light italic">Architecture</span> with <br />
-          AI-Driven Design
+          Bridging
+          <span class="font-light italic">Design</span>
+          and
+          <span class="font-light italic">Code</span>
+          for Exceptional User Interfaces.
         </h1>
       </div>
 
@@ -42,36 +44,56 @@
         class="col-span-12 col-start-1 row-span-1 h-fit overflow-hidden rounded-[20px] md:col-span-6 xl:col-span-3 xl:col-start-6 xl:row-start-1"
       >
         <img
-          src="/assets/betty.jpg"
-          alt="betty"
+          src="/assets/profile_pic_abel.jpg"
+          alt="Abel Areiza picture"
           class="w-full object-cover xl:h-[476px]"
         />
       </div>
 
       <!-- bio -->
       <div
-        class="col-span-12 col-start-1 row-span-1 flex flex-col justify-end rounded-[20px] bg-indigo-100 px-6 py-12 md:col-span-6 xl:col-span-4 xl:row-span-1 xl:row-start-2 xl:p-6 xl:pr-20"
+        class="col-span-12 col-start-1 row-span-1 flex flex-col justify-end rounded-[20px] bg-teal-700 px-6 py-12 text-lg font-light text-stone-100 md:col-span-6 xl:col-span-4 xl:row-span-1 xl:row-start-2 xl:p-6 xl:pr-20 xl:pb-10"
       >
-        <p class="text-xl font-light">
-          Julia Huang is an innovative AI artist, renowned for blending
-          cutting-edge technology with creative expression. Based in LA, she
-          crafts unique digital art experiences accessible globally.
+        <p class="mb-4">
+          Front-end developer and UX/UI Designer with 4 years of experience,
+          specializing in creating clean and efficient user interfaces.
+        </p>
+        <p class="mb-4">
+          My expertise allows me to deliver comprehensive and user-centric
+          solutions. I focus on minimal design and optimal user experience.
+        </p>
+        <p class="mb-4">
+          I work with HTML, CSS, JavaScript, Tailwind, HubSpot development, SQL,
+          Flutter, Vue and Nuxt JS and Figma.
         </p>
       </div>
 
       <!-- contact -->
       <div
-        class="col-span-12 row-span-1 flex flex-col justify-between gap-y-8 rounded-[20px] bg-indigo-200 px-6 py-12 md:col-span-12 xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:py-8"
+        class="col-span-12 row-span-1 flex flex-col justify-between gap-y-8 rounded-[20px] bg-teal-900 px-6 py-12 text-stone-200 md:col-span-12 xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:py-8"
       >
         <a href="/" class="flex w-full items-center justify-between">
-          <p class="w-24 text-sm font-light">Have some questions?</p>
-          <img
-            src="/assets/link_arrow.svg"
-            alt=""
-            class="h-6 w-6 object-contain"
-          />
+          <p class="w-40 text-sm font-light">
+            Ready to elevate your user interface? Get in touch.
+          </p>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.23768 21.9847C0.742998 21.4899 0.742998 20.6879 1.23768 20.1934L18.0754 3.35557H7.20001C6.50045 3.35557 5.93334 2.78846 5.93334 2.0889C5.93334 1.38935 6.50045 0.822235 7.20001 0.822235H21.1333C21.4693 0.822235 21.7915 0.955691 22.0291 1.19324C22.2665 1.43079 22.4 1.75296 22.4 2.0889V16.0223C22.4 16.7218 21.8328 17.2889 21.1333 17.2889C20.4339 17.2889 19.8667 16.7218 19.8667 16.0223V5.14691L3.029 21.9847C2.53434 22.4792 1.73234 22.4792 1.23768 21.9847Z"
+              fill="#f6f5f5"
+            />
+          </svg>
         </a>
-        <h2 class="mb-4 text-5xl">Contact me</h2>
+        <h2 class="mb-4 text-5xl">
+          <a href="mailto:abelareiza@gmail.com" class="text">Contact me</a>
+        </h2>
       </div>
 
       <div
@@ -79,25 +101,27 @@
       >
         <!-- projects -->
         <div
-          class="flex h-fit flex-col rounded-[20px] bg-indigo-100 px-6 pt-12 pb-4 xl:pt-8 xl:pb-2"
+          class="flex h-fit flex-col rounded-[20px] bg-teal-700 px-6 pt-12 pb-4 text-stone-100 xl:pt-8 xl:pb-2"
           id="accordion-flush"
           data-accordion="collapse"
           data-active-classes="pb-5 border-transparent"
-          data-inactive-classes="border-indigo-300"
+          data-inactive-classes="border-teal-900"
         >
           <!-- project card 1 -->
           <div class="" id="accordion-flush-heading-1">
             <button
               type="button"
-              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10 pt-0"
+              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10 pt-0 text-left"
               data-accordion-target="#accordion-flush-body-1"
               aria-expanded="true"
               aria-controls="accordion-flush-body-1"
             >
-              <span class="text-2xl font-semibold text-black">Musea</span>
+              <span class="text-2xl font-semibold text-stone-100"
+                >Landing Pages</span
+              >
               <img
                 data-accordion-icon
-                src="/assets/link_arrow.svg"
+                src="/assets/link_arrow.png"
                 class="h-4 w-4 object-contain transition-transform"
                 alt="Arrow icon"
               />
@@ -108,7 +132,7 @@
             class="hidden"
             aria-labelledby="accordion-flush-heading-1"
           >
-            <div class="border-b-2 border-indigo-300 pb-7">
+            <div class="border-b-2 border-teal-900 pb-7">
               <img
                 src="/assets/stock_image.jpg"
                 alt="A chair and a table in a room"
@@ -121,15 +145,17 @@
           <div class="" id="accordion-flush-heading-2">
             <button
               type="button"
-              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10"
+              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10 text-left"
               data-accordion-target="#accordion-flush-body-2"
               aria-expanded="true"
               aria-controls="accordion-flush-body-2"
             >
-              <span class="text-2xl font-semibold text-black">Elara</span>
+              <span class="text-2xl font-semibold text-stone-100"
+                >Web Portfolios</span
+              >
               <img
                 data-accordion-icon
-                src="/assets/link_arrow.svg"
+                src="/assets/link_arrow.png"
                 class="h-4 w-4 object-contain transition-transform"
                 alt="Arrow icon"
               />
@@ -140,7 +166,7 @@
             class="hidden"
             aria-labelledby="accordion-flush-heading-2"
           >
-            <div class="border-b-2 border-indigo-300 pb-7">
+            <div class="border-b-2 border-teal-900 pb-7">
               <img
                 src="/assets/stock_image.jpg"
                 alt="A chair and a table in a room"
@@ -153,15 +179,17 @@
           <div class="" id="accordion-flush-heading-3">
             <button
               type="button"
-              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10"
+              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10 text-left"
               data-accordion-target="#accordion-flush-body-3"
               aria-expanded="true"
               aria-controls="accordion-flush-body-3"
             >
-              <span class="text-2xl font-semibold text-black">Verve</span>
+              <span class="text-2xl font-semibold text-stone-100"
+                >HubSpot Web Development</span
+              >
               <img
                 data-accordion-icon
-                src="/assets/link_arrow.svg"
+                src="/assets/link_arrow.png"
                 class="h-4 w-4 object-contain transition-transform"
                 alt="Arrow icon"
               />
@@ -172,7 +200,7 @@
             class="hidden"
             aria-labelledby="accordion-flush-heading-3"
           >
-            <div class="border-b-2 border-indigo-300 pb-7">
+            <div class="border-b-2 border-teal-900 pb-7">
               <img
                 src="/assets/stock_image.jpg"
                 alt="A chair and a table in a room"
@@ -185,15 +213,17 @@
           <div class="" id="accordion-flush-heading-4">
             <button
               type="button"
-              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10"
+              class="flex w-full cursor-pointer items-center justify-between border-b-2 py-10 text-left"
               data-accordion-target="#accordion-flush-body-4"
               aria-expanded="true"
               aria-controls="accordion-flush-body-4"
             >
-              <span class="text-2xl font-semibold text-black">Pearson</span>
+              <span class="text-2xl font-semibold text-stone-100"
+                >Mobile & Web UI Design</span
+              >
               <img
                 data-accordion-icon
-                src="/assets/link_arrow.svg"
+                src="/assets/link_arrow.png"
                 class="h-4 w-4 object-contain transition-transform"
                 alt="Arrow icon"
               />
@@ -204,7 +234,7 @@
             class="hidden"
             aria-labelledby="accordion-flush-heading-4"
           >
-            <div class="border-b-2 border-indigo-300 pb-7">
+            <div class="border-b-2 border-teal-900 pb-7">
               <img
                 src="/assets/stock_image.jpg"
                 alt="A chair and a table in a room"
@@ -217,15 +247,17 @@
           <div class="" id="accordion-flush-heading-5">
             <button
               type="button"
-              class="flex w-full cursor-pointer items-center justify-between border-b-0 py-10"
+              class="flex w-full cursor-pointer items-center justify-between border-b-0 py-10 text-left"
               data-accordion-target="#accordion-flush-body-5"
               aria-expanded="true"
               aria-controls="accordion-flush-body-5"
             >
-              <span class="text-2xl font-semibold text-black">Zephyr</span>
+              <span class="text-2xl font-semibold text-stone-100"
+                >E-commerce</span
+              >
               <img
                 data-accordion-icon
-                src="/assets/link_arrow.svg"
+                src="/assets/link_arrow.png"
                 class="h-4 w-4 object-contain transition-transform"
                 alt="Arrow icon"
               />
@@ -236,7 +268,7 @@
             class="hidden"
             aria-labelledby="accordion-flush-heading-5"
           >
-            <div class="border-b-0 border-indigo-300 pb-10">
+            <div class="border-b-0 border-teal-300 pb-10">
               <img
                 src="/assets/stock_image.jpg"
                 alt="A chair and a table in a room"
@@ -248,21 +280,16 @@
 
         <!-- social -->
         <div
-          class="flex h-full items-center justify-evenly rounded-[20px] bg-indigo-100"
+          class="grid h-full grid-cols-2 items-center rounded-[20px] bg-teal-700 text-stone-100 md:grid-cols-1 xl:grid-cols-2"
         >
           <a
             href="/"
-            class="flex w-full justify-center px-4 py-12 text-sm font-light uppercase xl:py-10"
-            >Instagram</a
+            class="flex w-full justify-center px-4 py-12 font-light uppercase md:py-8 xl:py-10"
+            >GitHub</a
           >
           <a
             href="/"
-            class="flex w-full justify-center px-4 py-12 text-sm font-light uppercase xl:py-10"
-            >X</a
-          >
-          <a
-            href="/"
-            class="flex w-full justify-center px-4 py-12 text-sm font-light uppercase xl:py-10"
+            class="flex w-full justify-center px-4 py-12 font-light uppercase md:py-8 xl:py-10"
             >LinkedIn</a
           >
         </div>
